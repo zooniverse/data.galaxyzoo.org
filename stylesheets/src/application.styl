@@ -8,7 +8,7 @@ h1
 	font-size: 24px
 	margin: 0.5em 0 0.15em 0
 
-p
+p, td
 	font-size: 14px
 
 body
@@ -18,8 +18,14 @@ body
 
 	> .header
 		@extends .container
-		padding: 95px 0 30px 0
+		padding: 95px 0 15px 0
 		text-align: center
+
+		.nav
+			padding: 15px 0 0 0
+
+			> *
+				padding: 0 5px
 
 	> .content
 		@extends .container
@@ -40,11 +46,13 @@ a
 table
 	width: 100%
 
-	td
-		background: rgba(#fff, 0.1)
-		padding: 3px
+	td, th
+		padding: 3px 6px
 
-	.banner
+	td
+		background: #151515
+
+	.banner, th
 		background: rgba(#fff, 0.2)
 		font-weight: 700
 		text-align: center

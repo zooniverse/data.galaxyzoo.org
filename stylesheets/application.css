@@ -8,7 +8,8 @@ h1 {
   font-size: 24px;
   margin: 0.5em 0 0.15em 0;
 }
-p {
+p,
+td {
   font-size: 14px;
 }
 body {
@@ -17,8 +18,14 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 body > .header {
-  padding: 95px 0 30px 0;
+  padding: 95px 0 15px 0;
   text-align: center;
+}
+body > .header .nav {
+  padding: 15px 0 0 0;
+}
+body > .header .nav > * {
+  padding: 0 5px;
 }
 body > .content {
   padding: 30px 0 60px 0;
@@ -38,11 +45,15 @@ a:hover {
 table {
   width: 100%;
 }
-table td {
-  background: rgba(255,255,255,0.1);
-  padding: 3px;
+table td,
+table th {
+  padding: 3px 6px;
 }
-table .banner {
+table td {
+  background: #151515;
+}
+table .banner,
+table th {
   background: rgba(255,255,255,0.2);
   font-weight: 700;
   text-align: center;

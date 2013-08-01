@@ -16,7 +16,7 @@ task 'watch-coffee', 'Watch CoffeeScript changes during development', ->
 
 task 'watch-jade', 'Watch jade template files', ->
   console.log 'Watching .jade files in ./templates'
-  run 'jade -P -o ./ -w ./templates/index.jade' # lol
+  run 'jade -P -o ./ -w ./templates/index.jade ./templates/overlaps.jade' # lol
 
 task 'serve', 'Run a dev server', ->
   invoke 'watch-coffee'
