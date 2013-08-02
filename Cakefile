@@ -14,14 +14,9 @@ task 'watch-coffee', 'Watch CoffeeScript changes during development', ->
   console.log 'Watching for CoffeeScript in ./src'
   run 'coffee -w -o ./js -c ./js/src'
 
-task 'watch-jade', 'Watch jade template files', ->
-  console.log 'Watching .jade files in ./templates'
-  run 'jade -P -o ./ -w ./templates/index.jade ./templates/overlaps.jade' # lol
-
 task 'serve', 'Run a dev server', ->
   invoke 'watch-coffee'
   invoke 'watch-stylus'
-  invoke 'watch-jade'
 
   console.log "Running a server at localhost:8080"
   run 'static'
