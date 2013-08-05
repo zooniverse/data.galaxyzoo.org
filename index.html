@@ -52,18 +52,19 @@
 
 					<div data-scroll-index="0">
 						<h1>Galaxy Zoo 1 data release</h1>
+						<p>The original <a href="http://zoo1.galaxyzoo.org">Galaxy Zoo</a> project ran from July 2007 until February 2009. It was replaced by <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2</a>, <a href="http://hubble.galaxyzoo.org">Galaxy Zoo: Hubble</a>, and <a href="http://www.galaxyzoo.org">Galaxy Zoo: CANDELS</a>. In the original Galaxy Zoo project, volunteers were asked to classify images of <a href="http://www.sdss.org">Sloan Digital Sky Survey</a> galaxies as belonging to one of six categories - elliptical, clockwise spiral, anticlockwise spiral, edge-on , star/don't know, or merger. 
 					</div>
 
 					<div data-scroll-index="1">
 						<h2>Full catalog</h2>
-						<p>The original <a href="http://zoo1.galaxyzoo.org">Galaxy Zoo</a> project ran from July 2007 until February 2009. It was replaced by <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2</a>, <a href="http://hubble.galaxyzoo.org">Galaxy Zoo: Hubble</a>, and <a href="http://www.galaxyzoo.org">Galaxy Zoo: CANDELS</a>. In the original Galaxy Zoo project, volunteers were asked to classify images of <a href="http://www.sdss.org">Sloan Digital Sky Survey</a> galaxies as belonging to one of six categories - elliptical, clockwise spiral, anticlockwise spiral, edge-on , star/don't know, or merger. 
                         <p>This webpage allows anyone to download the resulting GZ classifications of nearly 900,000 galaxies in the project.
 						<p>Galaxy Zoo is described in <a href="http://adsabs.harvard.edu/abs/2008MNRAS.389.1179L">Lintott et al. 2008, MNRAS, 389, 1179</a> and the data release is described in <a href="http://adsabs.harvard.edu/abs/2011MNRAS.410..166L">Lintott et al. 2011, 410, 166</a>. Anyone making use of the data should cite at least one of these papers in any resulting publications.</p>
-						<p>Table 2 gives classifications of galaxies which have spectra included in SDSS Data Release 7. The fraction of the vote in each of the six categories is given, along with debiased votes in elliptical and spiral categories and flags identifying systems as classified as spiral, elliptical or uncertain.</p>
 
 						<table class="downloads">
 							<tr>
 								<td colspan="2" class="banner">Table 2</td>
+                            <tr>
+							<tr><td colspan="2">This table gives classifications of galaxies which have spectra included in SDSS Data Release 7. The fraction of the vote in each of the six categories is given, along with debiased votes in elliptical and spiral categories and flags identifying systems as classified as spiral, elliptical or uncertain.</tr></td>
 							</tr>
 							<tr>
 								<td>CSV (gzipped)</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table2.csv.gz">http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table2.csv.gz</a></td>
@@ -77,16 +78,16 @@
 							<tr>	
 								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table2.vot.gz">http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table2.vot.gz</a></td>
 							</tr>
+						    <tr><td colspan="2"><i>Note: the provided flags in Table 2 are there for the convenience of users who do not want to get into the details too much. These are based upon a vote fraction threshold of 0.8. However, there is a complication in the debiasing (described in <a href="http://adsabs.harvard.edu/abs/2009MNRAS.393.1324B">Bamford et al. 2009</a>). The classification bias depends on whether one uses the type likelihoods directly, or applies a threshold. The bias is worse if thresholds are used. We therefore applied bias corrections computed in consistent fashion. So, for the debiased type likelihoods we computed the bias correction based on the elliptical/spiral ratio using the likelihoods directly; for the type flags we debiased the raw type likelihoods using a correction based on the elliptical/spiral ratio determined after applying a 0.8 threshold, and then applied the same threshold to produce the flags. Therefore, the type flags do not correspond to simply applying a 0.8 threshold on the debiased type likelihoods, though for many galaxies these will agree.</i></tr></td>
 						</table>
 
 						<br />
-						<p><i>Note: the provided flags are there for the convenience of those who do not want to get into the details too much. These are based upon a vote fraction threshold of 0.8. However, there is a complication in the debiasing (described in <a href="http://adsabs.harvard.edu/abs/2009MNRAS.393.1324B">Bamford et al. 2009</a>). The classification bias depends on whether one uses the type likelihoods directly, or applies a threshold. The bias is worse if thresholds are used. We therefore applied bias corrections computed in consistent fashion. So, for the debiased type likelihoods we computed the bias correction based on the elliptical/spiral ratio using the likelihoods directly; for the type flags we debiased the raw type likelihoods using a correction based on the elliptical/spiral ratio determined after applying a 0.8 threshold, and then applied the same threshold to produce the flags. Therefore, the type flags do not correspond to simply applying a 0.8 threshold on the debiased type likelihoods, though for many galaxies these will agree.</i></p>
-						<p>Table 3 gives classifications of galaxies included in the Galaxy Zoo sample which did not have spectra available in SDSS Data Release 7. It is not possible to estimate the bias in this sample without accurate redshifts, and so only the fraction of the vote in each of the six categories is given.</p>
 
 						<table class="downloads">
 							<tr>
 								<td colspan="2" class="banner">Table 3</td>
 							</tr>
+							<tr><td colspan="2">This table gives classifications of galaxies included in the Galaxy Zoo sample which did not have spectra available in SDSS Data Release 7. It is not possible to estimate the bias in this sample without accurate redshifts, and so only the fraction of the vote in each of the six categories is given.</tr></td>
 							<tr>
 								<td>CSV (gzipped)</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table3.csv.gz">http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table3.csv.gz</a></td>
 							</tr>
@@ -102,12 +103,12 @@
 						</table>
 
 						<br />
-						<p>Table 4 gives a series of measures of the classification confidence.</p>
 
 						<table class="downloads">
 							<tr>
 								<td colspan="2" class="banner">Table 4</td>
 							</tr>
+							<tr><td colspan="2">This table gives a series of measures of the classification confidence.</tr></td>
 							<tr>
 								<td>CSV (gzipped)</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table4.csv.gz">http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table4.csv.gz</a></td>
 							</tr>
@@ -123,12 +124,12 @@
 						</table>
 
 						<br />	
-						<p>Tables 5 and 6 give the results from the bias study that introduced mirrored (Table 5) and monochrome (Table 6) images.</p>
 
 						<table class="downloads">
 							<tr>
 								<td colspan="2" class="banner">Table 5</td>
 							</tr>
+							<tr><td colspan="2">This table gives the results from the bias study that introduced mirrored images.</tr></td>
 							<tr>
 								<td>CSV (gzipped)</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table5.csv.gz">http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table5.csv.gz</a></td>
 							</tr>
@@ -149,6 +150,7 @@
 							<tr>
 								<td colspan="2" class="banner">Table 6</td>
 							</tr>
+							<tr><td colspan="2">This table gives the results from the bias study that introduced monochrome images.</tr></td>
 							<tr>
 								<td>CSV (gzipped)</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table6.csv.gz">http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table6.csv.gz</a></td>
 							</tr>
@@ -164,12 +166,12 @@
 						</table>
 
 						<br />
-						<p>Table 7 gives the fraction of votes in each of the six categories, combining results from the main and bias studies.</p>
 
 						<table class="downloads">
 							<tr>
 								<td colspan="2" class="banner">Table 7</td>
 							</tr>
+							<tr><td colspan="2">This table gives the fraction of votes in each of the six categories, combining results from the main and bias studies.</tr></td>
 							<tr>
 								<td>CSV (gzipped)</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table7.csv.gz">http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table7.csv.gz</a></td>
 							</tr>
@@ -204,7 +206,7 @@
 						<br />
 
 						<h2>AGN host galaxies</h2>
-						<p>This sample is presented in the Galaxy Zoo 1 paper on AGN host galaxies (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S" target="_blank">Schawinski et al., 2010, ApJ, 711, 284</a>). It is a volume-limited sample of galaxies (0.02 < z < 0.05, M_z < -19.5 AB) with emission line classifications, stellar masses, velocity dispersions and GZ1 morphological classifications. When using this sample, please cite Schawinski et al. (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S">2010</a>) and Lintott et al. (<a href="http://adsabs.harvard.edu/abs/2008MNRAS.389.1179L">2008</a>, <a href="http://adsabs.harvard.edu/abs/2011MNRAS.410..166L">2011</a>).</p>
+						<p>This sample is presented in the Galaxy Zoo 1 paper on AGN host galaxies (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S" target="_blank">Schawinski et al., 2010, ApJ, 711, 284</a>). It is a volume-limited sample of galaxies (0.02 &lt; z &lt; 0.05, M<sub>z</sub> &lt; &ndash;19.5 AB) with emission line classifications, stellar masses, velocity dispersions and GZ1 morphological classifications. When using this sample, please cite Schawinski et al. (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S">2010</a>) and Lintott et al. (<a href="http://adsabs.harvard.edu/abs/2008MNRAS.389.1179L">2008</a>, <a href="http://adsabs.harvard.edu/abs/2011MNRAS.410..166L">2011</a>).</p>
 						<p>Download here: <a href="http://galaxy-zoo-1.s3.amazonaws.com/schawinski_GZ_2010_catalogue.fits.gz">http://galaxy-zoo-1.s3.amazonaws.com/schawinski_GZ_2010_catalogue.fits.gz</a></p>
 						
 						<p>
@@ -213,9 +215,9 @@
 							<li>OBJID - SDSS DR7 object ID<br /></li>
 							<li>RA, DEC - RA and dec in J2000.0<br /></li>
 							<li>REDSHIFT - spectroscopic redshift from SDSS<br /></li>
-							<li>GZ1_MORPHOLOGY - Galaxy Zoo 1 morphology according to the <a href="http://adsabs.harvard.edu/abs/2008MNRAS.388.1686L">Land et al. (2008)</a> "clean" criterion. This is an integer where 0=indeterminate, 1=early type, 3=merger, 4=late type<br /></li>
-							<li>BPT_CLASS - Spectoscopic classification of galaxy based on emission lines ratios in the BPT diagram. 0=no emission lines, 1=SF, 2=Composite, 3=Seyfert and 4=LINER.<br /></li>
-							<li>U,G,R,I,Z - SDSS model magnitudes. These are extinction corrected but not k-corrected.<br /></li>
+							<li>GZ1_MORPHOLOGY - Galaxy Zoo 1 morphology according to the <a href="http://adsabs.harvard.edu/abs/2008MNRAS.388.1686L">Land et al. (2008)</a> "clean" criterion. This is an integer where 0 = indeterminate, 1 = early type, 3 = merger, 4 = late type<br /></li>
+							<li>BPT_CLASS - Spectroscopic classification of galaxy based on emission lines ratios in the BPT diagram. 0 = no emission lines, 1 = star-forming, 2 = composite, 3 = Seyfert and 4 = LINER.<br /></li>
+							<li>U,G,R,I,Z - SDSS model magnitudes. These are extinction-corrected but not <i>k</i>-corrected.<br /></li>
 							<li>SIGMA, SIGMA_ERR - Stellar velocity dispersion (and error) measured using GANDALF<br /></li>
 							<li>LOG_MSTELLAR - log of stellar mass [M_sun]<br /></li>
 							<li>L_O3 - Extinction-corrected [OIII] luminosity</li>
@@ -225,32 +227,224 @@
 
 					<div data-scroll-index="3">
 						<h2>Overlapping Galaxy Pairs</h2>
-						<p>overlapping gz pairs content</p>
+                        <p>
+                          This section contains data from the Galaxy Zoo survey for overlapping galaxy pairs, useful for studies of dust absorption. Data is derived from the Zoo 1 and Zoo 2 periods (August 2007&ndash;April 2010), and is described in detail by <a href="http://adsabs.harvard.edu/abs/2013PASP..125....2K">Keel et al. (PASP, 2013, 125, 923)</a>. The catalog contains a total of 1990 galaxy pairs.</p>
+
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Overlapping galaxy pairs</td>
+							</tr>
+						    <tr><td colspan=2><a href="overlaps.html">Column description and format</a></td></tr>
+							<tr>
+								<td>TXT</td><td><a href="./overlapcatalog.txt">overlapcatalog.txt</a></td>
+							</tr>
+							<tr>
+								<td>Javascript</td><td><a href="http://data.galaxyzoo.org/overlaps-js.html">Overlap candidates (sortable webpage)</a></td>
+							</tr>
+						</table>
+
+						<br />
+
+                        <p> There is a similar file of candidate pairs which were rejected for the final list because of evidence for interaction, other geometric reasons, or for having redshifts the wrong way around for dust backlighting.  </p>
+                        <table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Rejected overlapping galaxy pairs</td>
+							</tr>
+                          <tr>
+                            <td>PDF</td>
+                            <td><a href="http://astronomy.ua.edu/keel/observe/PDFcharts/OverlapRejects.pdf">OverlapRejects.pdf</a></td>
+                          </tr>
+                          <tr>
+                            <td>Javascript</td>
+                            <td><a href="http://bama.ua.edu/~ammanning/discard.html">Overlap rejects (sortable webpage)</a></td>
+                          </tr>
+                        </table>
+						<br />
+                        <p> The various overlapping galaxy pair types are illustrated in Figures <a href="images/fig2a.png">2a</a> and <a href="images/fig2b.png">2b</a> from Keel et al. 2013. Below are PDF files containing a single page for each galaxy pair, plus finding charts, more detailed photometry and identifications, and in some cases more precise redshifts. The PDFs are also available at <a href="http://astronomy.ua.edu/keel/observe/PDFcharts">http://astronomy.ua.edu/keel/observe/PDFcharts</a>.</p>
+                        <table class="downloads">
+                          <tr>
+                            <td><a href="http://astronomy.ua.edu/keel/observe/PDFcharts/SDSSOverlaps00Final.pdf">SDSSOverlaps00Final.pdf</a></td>
+                            <td>RA: 00&ndash;10 hours</td>
+                          </tr>
+                          <tr>
+                            <td><a href="http://astronomy.ua.edu/keel/observe/PDFcharts/SDSSOverlaps10final.pdf">SDSSOverlaps10final.pdf</a></td>
+                            <td>RA: 10&ndash;13 hours</td>
+                          </tr>
+                          <tr>
+                            <td><a href="http://astronomy.ua.edu/keel/observe/PDFcharts/SDSSOverlaps13final.pdf">SDSSOverlaps13final.pdf</a></td>
+                            <td>RA: 13&ndash;15 hours</td>
+                          </tr>
+                          <tr>
+                            <td><a href="http://astronomy.ua.edu/keel/observe/PDFcharts/SDSSOverlaps15final.pdf">SDSSOverlaps15final.pdf</a></td>
+                            <td>RA: 15&ndash;24 hours</td>
+                          </tr>
+                        </table>
 					</div>
 
 					<div data-scroll-index="4">
 						<h1>Galaxy Zoo 2</h1>
-						<p>GZ 2 content</p>
+                        <p> <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2 (GZ2)</a> was the successor project to the Galaxy Zoo. The original project classified the morphologies of SDSS images in only broad categories: elliptical, spiral, and merging galaxies. GZ2 selected a subsample of the brightest and largest galaxies in the Legacy release to classify finer morphology. This included galactic bars, spiral arm and pitch angle, bulges, edge-on galaxies, relative ellipticities, and many other features. 
 					</div>
+
 
 					<div data-scroll-index="5">
 						<h2>Full Catalog</h2>
-						<p>full catalog conent</p>
+                        <p>These tables provide the GZ2 classifications for nearly 300,000 galaxies in the SDSS.
+						<p>The project description and data reduction is in Willett et al. (2013; accepted to MNRAS) &mdash; please cite this paper if making any use of the GZ2 data. The table numbers below are the same as their order in the paper.</p>
+                        <p> The code used to reduce GZ2 is also available on GitHub &mdash; please take a look either at its <a href="http://willettk.github.io/galaxyzoo2/">webpage</a> or fork it from the <a href="https://github.com/willettk/galaxyzoo2">repository</a> if you're interested in the details.
+
+						<br />	
+
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Table 5 - Main sample, spectroscopic redshifts</td>
+							</tr>
+						    <tr><td colspan=2>Table 5 gives classifications of the 243,500 galaxies in the main sample with spectroscopic redshifts. This is the primary GZ2 data release, containing the largest number of galaxies and the most reliable morphologies.</td></tr>
+						    <tr><td colspan=2><a href="GZ2/zoo2MainSpecz.txt">Column description and format</a></td></tr>
+							<tr>
+								<td>CSV</td><td><a href="http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.csv.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.csv.gz</a></td>
+							</tr>
+							<tr>
+								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2MainSpecz.fits.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.fits.gz</a></td>
+							</tr>
+							<tr>	
+								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2MainSpecz.vot.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.vot.gz</a></td>
+							</tr>
+						</table>
+
+						<br />
+
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Table 6 - Main sample, photometric redshifts</td>
+							</tr>
+						    <tr><td colspan=2>Table 6 gives classifications of the 42,462 galaxies in the main sample with photometric redshifts only. Debiased morphologies for this sample are slightly more uncertain than Table 5, since the data reduction requires a redshift to adjust the morphology for classification bias.</td></tr>
+						    <tr><td colspan=2><a href="GZ2/zoo2MainPhotoz.txt">Column description and format</a></td></tr>
+							<tr>
+								<td>CSV</td><td><a href="http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.csv.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.csv.gz</a></td>
+							</tr>
+							<tr>
+								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2MainSpecz.fits.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.fits.gz</a></td>
+							</tr>
+							<tr>	
+								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2MainSpecz.vot.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2MainSpecz.vot.gz</a></td>
+							</tr>
+						</table>
+
+						<br />
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Table 7 - Stripe 82, normal-depth</td>
+							</tr>
+						    <tr><td colspan=2>Table 7 gives classifications of the 17,787 galaxies classified in single-depth Stripe 82 images. The magnitude limit for Stripe 82 classifications (r&lt;17.7) is slightly deeper than the main samples. Some of these galaxies also appear in the main sample (Table 5).</td></tr>
+						    <tr><td colspan=2><a href="GZ2/zoo2Stripe82Normal.txt">Column description and format</a></td></tr>
+							<tr>
+								<td>CSV</td><td><a href="http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Normal.csv.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Normal.csv.gz</a></td>
+							</tr>
+							<tr>
+								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2Stripe82Normal.fits.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Normal.fits.gz</a></td>
+							</tr>
+							<tr>	
+								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2Stripe82Normal.vot.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Normal.vot.gz</a></td>
+							</tr>
+						</table>
+
+						<br />
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Table 8 - Stripe 82, coadded-depth (set 1)</td>
+							</tr>
+						    <tr><td colspan=2>Table 8 gives classifications of the first set of 19,765 galaxies classified in the coadded (runs 106 and 206) Stripe 82 images. Coadded images are made from combining between 47&ndash;55 individual exposures, resulting in better detection of fainter features and improved seeing. This set of images had no adjustments made to its background, which resulted in coloured background noise for some galaxies.</td></tr>
+						    <tr><td colspan=2><a href="GZ2/zoo2Stripe82Coadd1.txt">Column description and format</a></td></tr>
+							<tr>
+								<td>CSV</td><td><a href="http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd1.csv.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd1.csv.gz</a></td>
+							</tr>
+							<tr>
+								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2Stripe82Coadd1.fits.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd1.fits.gz</a></td>
+							</tr>
+							<tr>	
+								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2Stripe82Coadd1.vot.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd1.vot.gz</a></td>
+							</tr>
+						</table>
+
+						<br />
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Table 9 - Stripe 82, coadded-depth (set 2)</td>
+							</tr>
+						    <tr><td colspan=2>Table 9 gives classifications of the second set of 19,761 galaxies classified in the coadded (runs 106 and 206) Stripe 82 images. Coadded images are made from combining between 47&ndash;55 individual exposures, resulting in better detection of fainter features and improved seeing. This set of images applied a modest colour desaturation to de-emphasise background noise in the coadded data.</td></tr>
+						    <tr><td colspan=2><a href="GZ2/zoo2Stripe82Coadd2.txt">Column description and format</a></td></tr>
+							<tr>
+								<td>CSV</td><td><a href="http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd2.csv.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd2.csv.gz</a></td>
+							</tr>
+							<tr>
+								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2Stripe82Coadd2.fits.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd2.fits.gz</a></td>
+							</tr>
+							<tr>	
+								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/zoo2Stripe82Coadd2.vot.gz">http://galaxy-zoo-2.s3.amazonaws.com/zoo2Stripe82Coadd2.vot.gz</a></td>
+							</tr>
+						</table>
+
+						<br />
+						<h3>CASjobs</h3>
+						<p>The full GZ2 catalog is also accessible via <a href="http://skyserver.sdss3.org/CasJobs/">CasJobs</a> in Data Release 10. The table names are:</p>
+						<p>
+                            <ul>
+							<li>Table 5: DR10.zoo2MainSpecz<br /></li>
+							<li>Table 6: DR10.zoo2MainPhotoz<br /></li>
+							<li>Table 7: DR10.zoo2Stripe82Normal<br /></li>
+							<li>Table 8: DR10.zoo2Stripe82Coadd1<br /></li>
+							<li>Table 9: DR10.zoo2Stripe82Coadd2<br /></li>
+                            </ul>
+						</p>
+
+						<h3>SDSS Skyserver</h3>
+						<p>For any object in SDSS DR10, you can also get a quick look at any Galaxy Zoo or Galaxy Zoo 2 classifications by using the <a href="http://skyserver.sdss3.org/public/en/tools/explore/">"Explore"</a> tool. Just click the "Galaxy Zoo" link under "Imaging Summary" in the left-hand sidebar (<a href="http://skyserver.sdss3.org/public/en/tools/explore/galaxyzoo.aspx?id=1237668296598749280&spec=2947691243863304192&apid=apogee.n.s.s3.4128.2M13102744+1826172">example here</a>). 
+
 					</div>
 
 					<div data-scroll-index="6">
 						<h2>Bar lengths</h2>
-						<p>bar lengths content</p>
+						<p>In conjunction with Galaxy Zoo 2, which identified whether galactic bars existed in obliquely inclined galaxies, we ran a parallel project to measure bar lengths, widths, and angles using an interactive interface. See <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1104.5394">Hoyle et al. (2011)</a> for a description of the project and scientific results.</p>
+						<br />
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Bar properties</td>
+							</tr>
+							<tr>
+								<td>CSV</td><td><a href="bars/hoyle_barlengths.csv">barlengths.csv</a></td>
+							</tr>
+							<tr>
+								<td>FITS</td><td><a href="bars/hoyle_barlengths.fits">barlengths.fits</a></td>
+							</tr>
+							<tr>	
+								<td>VOTable</td><td><a href="bars/hoyle_barlengths.vot">barlengths.vot</a></td>
+							</tr>
+						</table>
+
+						<br />
 					</div>
 
 					<div data-scroll-index="7">
 						<h1>Galaxy Zoo: Hubble</h1>
-						<p>gz: hubble content</p>
+						<p><a href="http://hubble.galaxyzoo.org">Galaxy Zoo: Hubble</a> used data from the Hubble Space Telescope to classify images of galaxies at higher redshifts. Images were taken from the Advanced Camera for Surveys (ACS) aboard Hubble, comprising data from the GEMS, GOODS-N, and AEGIS surveys. Full data reduction and analysis of GZ: Hubble results are ongoing.</p>
 					</div>
 
 					<div data-scroll-index="8">
 						<h2>Bar fraction evolution</h2>
-						<p>bar fraction evolution content</p>
+						<p>In Melvin et al. (2013, submitted), we use GZ2 and GZ: Hubble data to study the evolution of the bar fraction in galaxies over cosmic timescales. Presented here are links to webpages with the HST postage stamp images for the different galaxy samples from Melvin et al.</p>
+
+                        <ul>
+                            <li>GZ: Hubble disk galaxy sample split into three stellar mass bins:
+                            <ul>
+                                <li><a href="./GZH/samples/low_redshift_disks.html">Low mass sample (10.0&le;log(Mstar)<10.34; N=789)</a></li>
+                                <li><a href="./GZH/samples/intermediate_redshift_disks.html">Intermediate mass sample (10.34&le;log(Mstar)<10.64; N=801)</a></li>
+                                <li><a href="./GZH/samples/high_redshift_disks.html">High mass sample (log(Mstar)&ge;10.64; N=790)</a></li>
+                        </li></ul>
+                            <li>GZ: Hubble <a href="./GZH/samples/barred_disk_galaxies.html">barred disk galaxy sample (N=317)</a></li>
+                            <li>Disk galaxies <a href="./GZH/samples/tphot_disks.html">with Tphot&le;2.0 (N=225)</a></li>
+                        </ul>
+
 					</div>
 
 				</div>
