@@ -1,0 +1,84 @@
+Description of columns in the table `gz2sample'. 
+Contact Steven Bamford (steven.bamford@nottingham.ac.uk) or Kyle Willett (willett@physics.umn.edu) with questions.
+
+Quantities from SDSS DR7 PhotoObj:
+
+OBJID               -   unique ID in the SDSS database for this galaxy 
+RUN                 -   specific scan from SDSS telescope
+RERUN               -   post-processing designation
+CAMCOL              -   scanline within run
+FIELD               -   field within run
+OBJ                 -   object number within field
+RA                  -   J2000.0 right ascension (decimal degrees)
+DEC                 -   J2000.0 declination (decimal degrees)
+PETROR50_R          -   Petrosian 50% angular radius in r-band [arcsec]
+PETROR90_R          -   Petrosian 90% angular radius in r-band [arcsec]
+PETROMAG_U          -   Petrosian apparent magnitude in u-band [mag]
+PETROMAG_G          -   Petrosian apparent magnitude in g-band [mag]
+PETROMAG_R          -   Petrosian apparent magnitude in r-band [mag]
+PETROMAG_I          -   Petrosian apparent magnitude in i-band [mag]
+PETROMAG_Z          -   Petrosian apparent magnitude in z-band [mag]
+PETROMAGERR_U       -   Petrosian apparent magnitude error in u-band [mag]
+PETROMAGERR_G       -   Petrosian apparent magnitude error in g-band [mag]
+PETROMAGERR_R       -   Petrosian apparent magnitude error in r-band [mag]
+PETROMAGERR_I       -   Petrosian apparent magnitude error in i-band [mag]
+PETROMAGERR_Z       -   Petrosian apparent magnitude error in z-band [mag]
+PSFMAG_R            -   PSF magnitude in r-band [mag]
+FIBERMAG_R          -   Spectroscopic fiber (3 arcsec) magnitude in r-band [mag]
+DEVMAG_R            -   model magnitude from pure deVaucouleurs profile fit in r-band [mag]
+DEVMAGERR_R         -   model magnitude error from pure deVaucouleurs profile fit in r-band [mag]
+EXPMAG_R            -   model magnitude from pure exponential profile fit in r-band [mag]
+EXPMAGERR_R         -   model magnitude error from pure exponential profile fit in r-band [mag]
+FRACDEV_R           -   coefficient of deVaoucouleurs component in linear combination of models in r-band
+EXTINCTION_U        -   extinction in u-band [mag]
+EXTINCTION_G        -   extinction in g-band [mag]
+EXTINCTION_R        -   extinction in r-band [mag]
+EXTINCTION_I        -   extinction in i-band [mag]
+EXTINCTION_Z        -   extinction in z-band [mag]
+ROWC_U              -   row center position (r' coordinates) in u-band
+COLC_U              -   column center position (r' coordinates) in u-band
+ROWC_G              -   row center position (r' coordinates) in g-band
+COLC_G              -   column center position (r' coordinates) in g-band
+ROWC_R              -   row center position (r' coordinates) in r-band
+COLC_R              -   column center position (r' coordinates) in r-band
+ROWC_I              -   row center position (r' coordinates) in i-band
+COLC_I              -   column center position (r' coordinates) in i-band
+ROWC_Z              -   row center position (r' coordinates) in z-band
+COLC_Z              -   column center position (r' coordinates) in z-band
+
+Apparent quantities derived from the photometry:
+
+MU50_R              -   surface brightness within Petrosian 50% r-band radius [mag/arcsec^2]
+CMODELMAG_R         -   composite model magnitude in r-band [mag]
+CMODELMAGERR_R      -   composite model magnitude error in r-band [mag]
+
+Quantities from SDSS DR7 SpecObj:
+
+REDSHIFT            -   spectroscopic redshift
+REDSHIFTERR         -   spectroscopic redshift error
+
+Absolute quantities derived from the photometry:
+These have Galactic extinction corrections applied, are k-corrected (with Blanton's kcorrect) to z=0,
+and assume a (omega_lambda, omega_m, h_100) = (0.7, 0.3, 0.7) cosmology.
+
+PETROMAG_MU         -   Petrosian absolute magnitude in u-band [mag]
+PETROMAG_MG         -   Petrosian absolute magnitude in g-band [mag]
+PETROMAG_MR         -   Petrosian absolute magnitude in r-band [mag]
+PETROMAG_MI         -   Petrosian absolute magnitude in i-band [mag]
+PETROMAG_MZ         -   Petrosian absolute magnitude in z-band [mag]
+PETROMAGERR_MU      -   Petrosian absolute magnitude error in u-band [mag]
+PETROMAGERR_MG      -   Petrosian absolute magnitude error in g-band [mag]
+PETROMAGERR_MR      -   Petrosian absolute magnitude error in r-band [mag]
+PETROMAGERR_MI      -   Petrosian absolute magnitude error in i-band [mag]
+PETROMAGERR_MZ      -   Petrosian absolute magnitude error in z-band [mag]
+PETROR50_R_KPC      -   physical Petrosian half-light radius [kpc]
+
+Additional quantities for the site operation and Galaxy Wars binning:
+
+REGION                          -
+PETROR50_R_KPC_SIMPLE_BIN       -   bin number for physical size of galaxy
+PETROMAG_MR_SIMPLE_BIN          -   bin number for luminosity of galaxy
+REDSHIFT_SIMPLE_BIN             -   bin number for redshift of galaxy
+WVT_BIN                         -   bin number for weighted Voronoi tessellation
+
+
