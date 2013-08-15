@@ -52,7 +52,7 @@
 
 					<div data-scroll-index="0">
 						<h1>Galaxy Zoo 1 data release</h1>
-						<p>The original <a href="http://zoo1.galaxyzoo.org">Galaxy Zoo</a> project ran from July 2007 until February 2009. It was replaced by <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2</a>, <a href="http://hubble.galaxyzoo.org">Galaxy Zoo: Hubble</a>, and <a href="http://www.galaxyzoo.org">Galaxy Zoo: CANDELS</a>. In the original Galaxy Zoo project, volunteers were asked to classify images of <a href="http://www.sdss.org">Sloan Digital Sky Survey</a> galaxies as belonging to one of six categories - elliptical, clockwise spiral, anticlockwise spiral, edge-on , star/don't know, or merger. 
+						<p>The original <a href="http://zoo1.galaxyzoo.org">Galaxy Zoo</a> project ran from July 2007 until February 2009. It was replaced by <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2</a>, <a href="http://hubble.galaxyzoo.org">Galaxy Zoo: Hubble</a>, and <a href="http://www.galaxyzoo.org">Galaxy Zoo: CANDELS</a>. In the original Galaxy Zoo project, volunteers classified images of <a href="http://www.sdss.org">Sloan Digital Sky Survey</a> galaxies as belonging to one of six categories - elliptical, clockwise spiral, anticlockwise spiral, edge-on , star/don't know, or merger. 
 					</div>
 
 					<div data-scroll-index="1">
@@ -207,20 +207,21 @@
 						<p>This sample is presented in the Galaxy Zoo 1 paper on AGN host galaxies (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S" target="_blank">Schawinski et al., 2010, ApJ, 711, 284</a>). It is a volume-limited sample of galaxies (0.02 &lt; z &lt; 0.05, M<sub>z</sub> &lt; &ndash;19.5 AB) with emission line classifications, stellar masses, velocity dispersions and GZ1 morphological classifications. When using this sample, please cite Schawinski et al. (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S">2010</a>) and Lintott et al. (<a href="http://adsabs.harvard.edu/abs/2008MNRAS.389.1179L">2008</a>, <a href="http://adsabs.harvard.edu/abs/2011MNRAS.410..166L">2011</a>).</p>
 						<p>Download here: <a href="http://galaxy-zoo-1.s3.amazonaws.com/schawinski_GZ_2010_catalogue.fits.gz">http://galaxy-zoo-1.s3.amazonaws.com/schawinski_GZ_2010_catalogue.fits.gz</a></p>
 						
-						<p>
-							Column definitions are as follows:<br />
-                            <ul>
-							<li>OBJID - SDSS DR7 object ID<br /></li>
-							<li>RA, DEC - RA and dec in J2000.0<br /></li>
-							<li>REDSHIFT - spectroscopic redshift from SDSS<br /></li>
-							<li>GZ1_MORPHOLOGY - Galaxy Zoo 1 morphology according to the <a href="http://adsabs.harvard.edu/abs/2008MNRAS.388.1686L">Land et al. (2008)</a> "clean" criterion. This is an integer where 0 = indeterminate, 1 = early type, 3 = merger, 4 = late type<br /></li>
-							<li>BPT_CLASS - Spectroscopic classification of galaxy based on emission lines ratios in the BPT diagram. 0 = no emission lines, 1 = star-forming, 2 = composite, 3 = Seyfert and 4 = LINER.<br /></li>
-							<li>U,G,R,I,Z - SDSS model magnitudes. These are extinction-corrected but not <i>k</i>-corrected.<br /></li>
-							<li>SIGMA, SIGMA_ERR - Stellar velocity dispersion (and error) measured using GANDALF<br /></li>
-							<li>LOG_MSTELLAR - log of stellar mass [M_sun]<br /></li>
-							<li>L_O3 - Extinction-corrected [OIII] luminosity</li>
-                            </ul>
-						</p>
+						<table class="downloads">
+							<tr>
+							<tr><td>OBJID</td><td>SDSS DR7 object ID</tr>
+							<tr><td>RA, DEC</td><td>RA and dec in J2000.0</tr>
+							<tr><td>REDSHIFT</td><td>spectroscopic redshift from SDSS</tr>
+							<tr><td>GZ1_MORPHOLOGY</td><td>Galaxy Zoo 1 morphology according to the <a href="http://adsabs.harvard.edu/abs/2008MNRAS.388.1686L">Land et al. (2008)</a> "clean" criterion. This is an integer where 0 = indeterminate, 1 = early type, 3 = merger, 4 = late type</tr>
+							<tr><td>BPT_CLASS</td><td>Spectroscopic classification of galaxy based on emission lines ratios in the BPT diagram. 0 = no emission lines, 1 = star-forming, 2 = composite, 3 = Seyfert and 4 = LINER.</tr>
+							<tr><td>U,G,R,I,Z</td><td>SDSS model magnitudes. These are extinction-corrected but not <i>k</i>-corrected.</tr>
+							<tr><td>SIGMA, SIGMA_ERR</td><td>Stellar velocity dispersion (and error) measured using GANDALF</tr>
+							<tr><td>LOG_MSTELLAR</td><td>log of stellar mass [M_sun]</tr>
+							<tr><td>L_O3</td><td>Extinction-corrected [OIII] luminosity</tr>
+								<td>TXT</td><td><a href="./overlapcatalog.txt">overlapcatalog.txt</a></td>
+							</tr>
+						</table>
+
 					</div>
 
 					<div data-scroll-index="3">
@@ -281,7 +282,7 @@
 
 					<div data-scroll-index="4">
 						<h1>Galaxy Zoo 2</h1>
-                        <p> <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2 (GZ2)</a> was the successor project to the Galaxy Zoo. The original project classified the morphologies of SDSS images in only broad categories: elliptical, spiral, and merging galaxies. GZ2 selected a subsample of the brightest and largest galaxies in the Legacy release to classify finer morphology. This included galactic bars, spiral arm and pitch angle, bulges, edge-on galaxies, relative ellipticities, and many other features. 
+                        <p> <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2 (GZ2)</a> was the successor project to the Galaxy Zoo. GZ2 extends the original Galaxy Zoo classifications for a subsample of the brightest and largest galaxies in the Legacy release, measuring more detailed morphological features. This includes galactic bars, spiral arm and pitch angle, bulges, edge-on galaxies, relative ellipticities, and many others. 
 					</div>
 
 
@@ -289,7 +290,6 @@
 						<h2>Full Catalog</h2>
                         <p>These tables provide the GZ2 classifications for nearly 300,000 galaxies in the SDSS.
 						<p>The project description and data reduction is in Willett et al. (2013; accepted to MNRAS) &mdash; please cite this paper if making any use of the GZ2 data. The table numbers below are the same as their order in the paper.</p>
-                        <p> The code used to reduce GZ2 is also available on GitHub &mdash; please take a look either at its <a href="http://willettk.github.io/galaxyzoo2/">webpage</a> or fork it from the <a href="https://github.com/willettk/galaxyzoo2">repository</a> if you're interested in the details.
 
 						<br />	
 
@@ -402,8 +402,9 @@
 						</table>
 
 						<br />
+                        <p> The code used to reduce GZ2 is available on GitHub &mdash; please take a look either at its <a href="http://willettk.github.io/galaxyzoo2/">webpage</a> or fork it from the <a href="https://github.com/willettk/galaxyzoo2">repository</a> if you're interested in the details.
 						<h3>CASjobs</h3>
-						<p>The full GZ2 catalog is also accessible via <a href="http://skyserver.sdss3.org/CasJobs/">CasJobs</a> in Data Release 10. The table names are:</p>
+						<p>The GZ2 catalog is also accessible via <a href="http://skyserver.sdss3.org/CasJobs/">CasJobs</a> in Data Release 10. The table names in CasJobs are:</p>
 						<p>
                             <ul>
 							<li>Table 5: DR10.zoo2MainSpecz<br /></li>
@@ -415,17 +416,17 @@
 						</p>
 
 						<h3>SDSS Skyserver</h3>
-						<p>For any object in SDSS DR10, you can also get a quick look at any Galaxy Zoo or Galaxy Zoo 2 classifications by using the <a href="http://skyserver.sdss3.org/public/en/tools/explore/">"Explore"</a> tool. Just click the "Galaxy Zoo" link under "Imaging Summary" in the left-hand sidebar (<a href="http://skyserver.sdss3.org/public/en/tools/explore/galaxyzoo.aspx?id=1237668296598749280&spec=2947691243863304192&apid=apogee.n.s.s3.4128.2M13102744+1826172">example here</a>). 
+						<p>For any object in SDSS DR10, you can access its Galaxy Zoo or Galaxy Zoo 2 classifications (if present) by using the <a href="http://skyserver.sdss3.org/public/en/tools/explore/">"Explore"</a> tool. Just click the "Galaxy Zoo" link under "Imaging Summary" in the left-hand sidebar (<a href="http://skyserver.sdss3.org/public/en/tools/explore/galaxyzoo.aspx?id=1237668296598749280&spec=2947691243863304192&apid=apogee.n.s.s3.4128.2M13102744+1826172">example here</a>). 
 
 					</div>
 
 					<div data-scroll-index="6">
 						<h2>Bar lengths</h2>
-						<p>In conjunction with Galaxy Zoo 2, which identified whether galactic bars existed in obliquely inclined galaxies, we ran a parallel project to measure bar lengths, widths, and angles using an interactive interface. See <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1104.5394">Hoyle et al. (2011)</a> for a description of the project and scientific results.</p>
+						<p>In conjunction with Galaxy Zoo 2, we ran a parallel project to measure lengths, widths, and angles of galactic bars using an interactive interface. See <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1104.5394">Hoyle et al. (2011)</a> for a description of the project and scientific results. The full set of results can be downloaded below.</p>
 						<br />
 						<table class="downloads">
 							<tr>
-								<td colspan="2" class="banner">Bar properties</td>
+								<td colspan="2" class="banner">Bar lengths: Table 1</td>
 							</tr>
 							<tr>
 								<td>CSV</td><td><a href="bars/hoyle_barlengths.csv">barlengths.csv</a></td>
@@ -458,7 +459,7 @@
                                 <li><a href="./GZH/samples/high_redshift_disks.html">High mass sample (log(Mstar)&ge;10.64; N=790)</a></li>
                         </li></ul>
                             <li>GZ: Hubble <a href="./GZH/samples/barred_disk_galaxies.html">barred disk galaxy sample (N=317)</a></li>
-                            <li>Disk galaxies <a href="./GZH/samples/tphot_disks.html">with Tphot&le;2.0 (N=225)</a></li>
+                            <li><a href="./GZH/samples/tphot_disks.html">Disk galaxies with Tphot&le;2.0 (N=225)</a></li>
                         </ul>
 
                         <p>Shown here is a diagram of the <a href="./GZH/images/GZ_HST.jpg">classification scheme and decision tree</a> used in GZ: Hubble.
