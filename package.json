@@ -2,5 +2,15 @@
   "name": "data.galaxyzoo.org",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "stylus": "~0.38.0",
+    "nib": "~1.0.1",
+    "node-static": "~0.7.2",
+    "publisssh": "~0.2.1"
+  },
+  "scripts": {
+    "start": "cake serve",
+    "deploy": "cake compile && publisssh ./public data.galaxyzoo.org"
+  }
 }
