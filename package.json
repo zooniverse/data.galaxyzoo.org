@@ -11,6 +11,6 @@
   },
   "scripts": {
     "start": "cake serve",
-    "deploy": "cake compile && publisssh ./public data.galaxyzoo.org"
+    "deploy": "cake compile && publisssh ./public zooniverse-static/data.galaxyzoo.org"
   }
 }
