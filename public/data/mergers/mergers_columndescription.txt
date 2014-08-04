@@ -1,0 +1,64 @@
+Description of columns in the table `darg_mergers' 
+
+Contact Sugata Kaviraj (s.kaviraj@herts.ac.uk), Daniel Darg (ddarg@astro.ox.ac.uk), 
+or Kyle Willett (willett@physics.umn.edu) with questions.
+
+Any use of this dataset should cite Darg et al. (2010a), MNRAS, 401, 1043–1056,
+and Darg et al. (2010b), MNRAS, 401, 1552–1563.
+
+OBJECT1			    -   SDSS DR7 objID for the first galaxy in the merging pair
+OBJECT2			    -   SDSS DR7 objID for the second galaxy in the merging pair
+MORPH1			    -   morphology of the first galaxy in the pair (S = spiral, E = elliptical, SU = spiral (unsure), EU = elliptical (unsure)
+MORPH2			    -   morphology of the second galaxy in the pair (S = spiral, E = elliptical, SU = spiral (unsure), EU = elliptical (unsure)
+COMMENTS		    -   additional comments from D. Darg or S. Kaviraj on the merging pair
+STAGE			    -   visually-classified stage of the merger (1 = "separated", 2 = "interacting", 3 = "approaching post-merger")
+U_APP_1			    -   apparent u-band magnitude of the first galaxy in the pair
+G_APP_1			    -   apparent g-band magnitude of the first galaxy in the pair
+R_APP_1			    -   apparent r-band magnitude of the first galaxy in the pair
+I_APP_1			    -   apparent i-band magnitude of the first galaxy in the pair
+Z_APP_1			    -   apparent z-band magnitude of the first galaxy in the pair
+U_APP_2			    -   apparent u-band magnitude of the second galaxy in the pair
+G_APP_2			    -   apparent g-band magnitude of the second galaxy in the pair
+R_APP_2			    -   apparent r-band magnitude of the second galaxy in the pair
+I_APP_2			    -   apparent i-band magnitude of the second galaxy in the pair
+Z_APP_2			    -   apparent z-band magnitude of the second galaxy in the pair
+U_APP_ERR_1			-   measured uncertainty in apparent u-band magnitude of the first galaxy in the pair
+G_APP_ERR_1			-   measured uncertainty in apparent g-band magnitude of the first galaxy in the pair
+R_APP_ERR_1			-   measured uncertainty in apparent r-band magnitude of the first galaxy in the pair
+I_APP_ERR_1			-   measured uncertainty in apparent i-band magnitude of the first galaxy in the pair
+Z_APP_ERR_1			-   measured uncertainty in apparent z-band magnitude of the first galaxy in the pair
+U_APP_ERR_2			-   measured uncertainty in apparent u-band magnitude of the second galaxy in the pair
+G_APP_ERR_2			-   measured uncertainty in apparent g-band magnitude of the second galaxy in the pair
+R_APP_ERR_2			-   measured uncertainty in apparent r-band magnitude of the second galaxy in the pair
+I_APP_ERR_2			-   measured uncertainty in apparent i-band magnitude of the second galaxy in the pair
+Z_APP_ERR_2			-   measured uncertainty in apparent z-band magnitude of the second galaxy in the pair
+U_ABS_1		        -   absolute u-band magnitude of the first galaxy in the pair, based on spectroscopic redshift
+G_ABS_1		        -   absolute g-band magnitude of the first galaxy in the pair, based on spectroscopic redshift
+R_ABS_1		        -   absolute r-band magnitude of the first galaxy in the pair, based on spectroscopic redshift
+I_ABS_1		        -   absolute i-band magnitude of the first galaxy in the pair, based on spectroscopic redshift
+Z_ABS_1		        -   absolute z-band magnitude of the first galaxy in the pair, based on spectroscopic redshift
+U_ABS_2		        -   absolute u-band magnitude of the second galaxy in the pair, based on spectroscopic redshift
+G_ABS_2		        -   absolute g-band magnitude of the second galaxy in the pair, based on spectroscopic redshift
+R_ABS_2		        -   absolute r-band magnitude of the second galaxy in the pair, based on spectroscopic redshift
+I_ABS_2		        -   absolute i-band magnitude of the second galaxy in the pair, based on spectroscopic redshift
+Z_ABS_2		        -   absolute z-band magnitude of the second galaxy in the pair, based on spectroscopic redshift
+PLATE1		        -   SDSS plate number for the observation of the first galaxy in the pair
+MJD1		        -   SDSS Modified Julian Date for the observation of the first galaxy in the pair
+FIBERID1	        -   SDSS fiber ID for the spectrosopic observation of the first galaxy in the pair
+PLATE2		        -   SDSS plate number for the observation of the second galaxy in the pair
+MJD2		        -   SDSS Modified Julian Date for the observation of the second galaxy in the pair
+FIBERID2	        -   SDSS fiber ID for the spectrosopic observation of the second galaxy in the pair
+SPECZ1		        -   spectroscopic redshift for the first galaxy in the pair
+SPECZ2		        -   spectroscopic redshift for the second galaxy in the pair
+PHOTOZ1		        -   photometric redshift for the first galaxy in the pair
+PHOTOZ2		        -   photometric redshift for the second galaxy in the pair
+RA1			        -   Right ascension (J2000, decimal degrees) for the first galaxy in the pair
+RA2			        -   Right ascension (J2000, decimal degrees) for the second galaxy in the pair
+DEC1		        -   Declination (J2000, decimal degrees) for the first galaxy in the pair
+DEC2		        -   Declination (J2000, decimal degrees) for the second galaxy in the pair
+VOTE1		        -   weighted merger vote fraction (f_m) for the first galaxy in the pair
+VOTE2		        -   weighted merger vote fraction (f_m) for the second galaxy in the pair
+KMASS1		        -   stellar mass (log M/M_sun) of the first galaxy in the pair
+KMASS2		        -   stellar mass (log M/M_sun) of the second galaxy in the pair
+KMASS_ERR1	        -   uncertainty in stellar mass (log M/M_sun) of the first galaxy in the pair
+KMASS_ERR2	        -   uncertainty in stellar mass (log M/M_sun) of the second galaxy in the pair
