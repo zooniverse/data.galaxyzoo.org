@@ -1,0 +1,19 @@
+Description of columns in the table `peas_tbl4' 
+
+Contact Carie Cardamone (cnc@mit.edu) or Kyle Willett (willett@physics.umn.edu) with questions.
+
+Any use of this dataset should cite Cardamone et al. (2009), MNRAS, 399, 1191-1205
+
+DR7OBJID                - SDSS DR7 objID
+RA                      - right ascension [J2000]
+DEC                     - declination [J2000]
+REDSHIFT                - spectroscopic redshift
+OIII_EW                 - equivalent width of [OIII] 5007 line [angstrom]
+L_FUV                   - far-ultraviolet luminosity from GALEX GR4 [10^44 erg/s]
+L_FUV_ERR               - uncertainty in far-ultraviolet luminosity from GALEX GR4 [10^44 erg/s]
+SFR                     - star formation rate based on H-alpha flux [M_sun / yr]
+SFR_ERR                 - uncertainty in star formation rate based on H-alpha flux [M_sun / yr]
+METALLICITY             - log(O/H) + 12; calculated from [NII]/[OII] ratio
+METALLICITY_ERR_UPPER   - upper 1-sigma limit on log(O/H) + 12
+METALLICITY_ERR_LOWER   - lower 1-sigma limit on log(O/H) + 12
+M_STELLAR               - stellar mass from Schawinski et al. (2007) method [M_sun]

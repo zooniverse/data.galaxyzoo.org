@@ -3,8 +3,8 @@ Description of columns in the table `darg_mergers'
 Contact Sugata Kaviraj (s.kaviraj@herts.ac.uk), Daniel Darg (ddarg@astro.ox.ac.uk), 
 or Kyle Willett (willett@physics.umn.edu) with questions.
 
-Any use of this dataset should cite Darg et al. (2010a), MNRAS, 401, 1043–1056,
-and Darg et al. (2010b), MNRAS, 401, 1552–1563.
+Any use of this dataset should cite Darg et al. (2010a), MNRAS, 401, 1043-1056,
+and Darg et al. (2010b), MNRAS, 401, 1552-1563.
 
 OBJECT1			    -   SDSS DR7 objID for the first galaxy in the merging pair
 OBJECT2			    -   SDSS DR7 objID for the second galaxy in the merging pair
