@@ -1,0 +1,106 @@
+.container {
+    width: 1170px;
+}
+
+body {
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.tier1,
+.tier2,
+.tier3,
+.tier4,
+.tier5 {
+    stroke-width: 1;
+    stroke: #000;
+}
+
+.tier1 {
+    fill: #ccc;
+}
+
+.tier2 {
+    fill: #b8d4a2;
+}
+
+.tier3 {
+    fill: #9ecfdf;
+}
+
+.tier4 {
+    fill: #c5a8cc;
+}
+
+.tier5 {
+    fill: #e1a4ad;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke-opacity: 1;
+    stroke: #000;
+}
+
+.dash {
+    stroke-dasharray: 5,5;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  margin: 0;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+#nav_row {
+    margin-top: 10px;
+}
+
+.btn-group-xs > .btn,
+.btn-group-sm > .btn,
+.btn {
+    border-radius: 20px;
+}
+
+.btn-primary {
+    font-size: 15px;
+    background-color: #aaa;
+    border-color: #888;
+    color: #000;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+    background-color: #999;
+    border-color: #888;
+    color: #000;
+}
+
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary.active.focus,
+button:focus,
+a {
+    outline: 0 !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus{
+    box-shadow: 0 0 3px 3px rgba(255,128,0,.5);
+}
+
+.btn-primary.active,
+.btn-primary.active.focus {
+    background-color: #000;
+    border-color: #888;
+    color: #fff;
+}
