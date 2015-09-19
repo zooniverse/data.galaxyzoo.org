@@ -8,17 +8,17 @@
     <script src="./js/bootstrap.min.js"></script>
   </head>
   <body>
-    
+
     <div class="container" id="body_container">
-      
+
       <div class="row">
-        <div class="col-md-8 col-sm-offset-2 hidden-print">
+        <div class="col-md-12 text-center hidden-print">
           <h1 id="app_name">Galaxy Zoo Decision Trees</h1>
         </div>
       </div>
-      
+
       <div class="row" id="nav_row">
-        <div class="col-sm-6 col-sm-offset-3 hidden-print">
+        <div class="col-sm-12 text-center hidden-print">
           <div class="btn-group btn-group-sm pull-right-md" data-toggle="buttons" id="zoo_buttons">
             <label class="btn btn-primary active" id="zoo_2_lab">
               <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_2" value="2" checked>GZ 2
@@ -30,13 +30,19 @@
               <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_4s" value="4_s">GZ 4 Sloan
             </label>
             <label class="btn btn-primary" id="zoo_4c_lab">
-              <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_4c" value="4_c">GZ 4 Candels
+              <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_4c" value="4_c">GZ 4 CANDELS
             </label>
             <label class="btn btn-primary" id="zoo_4u_lab">
               <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_4u" value="4_u">GZ 4 UKIDSS
             </label>
             <label class="btn btn-primary" id="zoo_4f_lab">
               <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_4f" value="4_f">GZ 4 Ferengi
+            </label>
+            <label class="btn btn-primary" id="zoo_4d_lab">
+              <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_4d" value="4_d">GZ 4 DECaLs
+            </label>
+            <label class="btn btn-primary" id="zoo_4i_lab">
+              <input type="radio" name="zoo_tab" autocomplete="off"  id="zoo_4i" value="4_i">GZ 4 Illustris
             </label>
           </div>
         </div>
@@ -49,12 +55,12 @@
       </div>
 
       <footer class="hidden-print">
-        <aside class="pull-right">March 19, 2015</aside>
+        <aside class="pull-right">Sep. 16, 2015</aside>
         <a class="pull-left" id="pdf_link" href="#" target="_blank" rel="author">Download PDF</a>
       </footer>
 
     </div>
-    
+
     <script src="./js/d3.min.js"></script>
     <script src="./js/gz_tree.js"></script>
   </body>

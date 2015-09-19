@@ -88,15 +88,16 @@ function updateData(answers){
     // create the node tree object
     var force = d3.layout.force()
 	    .size([width, height]);
-    
+
     // update the sliders to default values
-    update_charge(1);
-    update_strength(1);
-    update_friction(0.35);
+    update_charge(0);
+    update_strength(0);
+    update_friction(1);
+    force.gravity(0);
     json_callback(answers);
 
     // now that the basics are set up read in the json file
-    function json_callback(answers) { 
+    function json_callback(answers) {
 	    // make sure to minpulate data *before* the update loop
 	    // add a list of source and target Links to each node
         root = answers;
@@ -126,7 +127,7 @@ function updateData(answers){
                 node.value = .5;
             };
 	    });
-	    
+
 	    // Normalize votes by total number
 	    Total_value=root.nodes[0].value
 	    root.nodes.forEach(function(node, i) {
@@ -134,13 +135,13 @@ function updateData(answers){
 	        node.radius =  width * Math.sqrt(node.value) / 25;
 	        node.node_id = i;
 	    });
-        
+
 	    // get the x position for each node
 	    computeNodeBreadths(root);
-	    // find how deep the tree goes and set the linkDistance to match 
+	    // find how deep the tree goes and set the linkDistance to match
 	    max_level = 10;
 	    force.linkDistance(.8*width/(max_level + 1));
-	    
+
 	    // good starting points
 	    root.nodes.forEach(function(d , i) {
 	        d.y = d.fixed_y;
@@ -163,7 +164,7 @@ function updateData(answers){
 	    .source(function(d) { return {"x":d.source.x, "y":d.source.y}; })
 	    .target(function(d) { return {"x":d.target.x, "y":d.target.y}; })
 	    .projection(function(d) { return [d.x, d.y]; });
-    
+
     var first_draw = true;
     var first_size = true;
     // create the update function to draw the tree
@@ -200,10 +201,10 @@ function updateData(answers){
                 //text.attr("dy", 0.5*max_height+"em")
 	        });
 	    }
-        
+
         var link = d3.select("#canvus").selectAll(".link");
 	    var gnode = d3.select("#canvus").selectAll(".gnode");
-	    // Set data as node ids        
+	    // Set data as node ids
 	    // add the nodes and links to the tree
 	    force
 	        .nodes(nodes_in)
@@ -212,13 +213,13 @@ function updateData(answers){
 
 	    // set the data for the links (with unique ids)
 	    link = link.data(links_in, function(d) { return d.link_id; });
-        
+
 	    // add a path object to each link
 	    var lenter = link.enter().insert("path", ".gnode")
             .attr("class", function(d) { return d.dash ? "link dash" : "link"; })
 	        .attr("d", diagonal)
             .style("stroke-width",1.5);
-        
+
 	    // Exit any old links
 	    link.exit().remove();
 
@@ -227,12 +228,12 @@ function updateData(answers){
 
 	    // Exit any old nodes
 	    gnode.exit().remove();
-        
+
 	    // add a group to the node to translate it
 	    var genter = gnode.enter().append("g")
 	        .attr("class", function(d) { return d.answer_id ? "gnode" : "gnode metadata-thumbnail"; })
-	        .call(force.drag);            
-        
+	        .call(force.drag);
+
 	    // add a group to the node to scale it
         // pull on the answer nodes and make them circles
 	    var gimage = genter.filter(function(d) { return d.value==0.5; })
@@ -269,7 +270,7 @@ function updateData(answers){
 
         gimage.selectAll("text")
             .call(wrap);
-        
+
         gimage.insert("g","text")
             .attr("transform", "translate(-50, -95)")
             .append("rect")
@@ -277,22 +278,22 @@ function updateData(answers){
             .attr("width", 100)
             .attr("height", 140)
             .attr("rx", 20);
-        
+
 	    // add the inital image to the node
 	    gimage.insert("image","text")
-	        .attr("xlink:href", "./images/workflow_orig.png")
+	        .attr("xlink:href", "./images/workflow_all.png")
             .attr("id", "node_image")
 	        .attr("x", -50)
 	        .attr("y", function(d) { return -image_offset[d.answer_id][1]*100-50; })
 	        .attr("clip-path", function(d) { return "url(#myClip" + d.node_id + ")"; })
 	        .attr("width", 100)
-	        .attr("height", 4900);
-        
+	        .attr("height", 5000);
+
         // draw rect for question nodes
         var gquestion = genter.filter(function(d) { return d.value==0.05; })
             .append("g")
             .attr("class", "gquestion");
-        
+
         gquestion.append("text")
             .attr("x", 0)
             .attr("y", 1)
@@ -320,7 +321,7 @@ function updateData(answers){
 	    // call-back to set how the nodes will move
 	    function tick(e) {
 	        // make sure the force gets smaller as the simulation runs
-	        var kx = 10 * e.alpha;	        
+	        var kx = 10 * e.alpha;
 	        root.nodes.forEach(function(d, i) {
                 d.y = d.fixed_y
                 d.x = d.fixed_x
@@ -335,8 +336,8 @@ function updateData(answers){
                 //} else {
 		            return 'translate(' + [d.x, d.y] + ')';
                 //}
-	        });    
-	        link.attr("d",diagonal);            
+	        });
+	        link.attr("d",diagonal);
 	    };
     };
     // Find the x positions for each node
