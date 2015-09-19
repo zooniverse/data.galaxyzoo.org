@@ -10,3 +10,9 @@ Then open the following in the browser to view the page:
     localhost:8000
 
 Other static file servers can also be run in the root directory if you prefer. 
+
+To deploy changes, use node v0.10.x, eg:
+
+```
+nvm use v0.10
+```
