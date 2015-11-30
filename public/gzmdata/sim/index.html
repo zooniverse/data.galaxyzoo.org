@@ -1,0 +1,242 @@
+<html>
+<head>
+<style>
+.container,.columns,body > .header{margin:0 auto;width:960px}
+.columns{zoom:1;padding:30px 0 50px 0;}
+.columns:before,.columns:after{content:"";display:table}
+.columns:after{clear:both}
+.columns > .column{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;float:left;}
+.columns > .column.narrow{width:25%}
+.columns > .column.wide{padding-left:20px;width:75%}
+h1{font-size:30px;margin:.8em 0 .15em 0}
+h2{font-size:24px;margin:.6em 0 .15em 0}
+h3{font-size:20px;margin:.4em 0 .15em 0}
+p,td,li{font-size:14px}
+body{background:url("../images/background.jpg") no-repeat scroll 50% 0 #000;color:#f2f2f2;font-family:"Open Sans",sans-serif;}
+body > .header{padding:95px 0 15px 0;text-align:center;}
+body > .header ul{list-style:none}
+body > .footer{background:rgba(255,255,255,0.1);border-top:1px solid rgba(255,255,255,0.2);padding:30px 0}
+a{color:#00a8f1;}
+a:hover{color:#79d6ff}
+table{width:100%;}
+table td,table th{padding:3px 6px}
+table td{background:#151515}
+table .banner,table th{background:rgba(255,255,255,0.2);font-weight:700;text-align:center}
+.nav-container ul{list-style:none;padding-left:15px;}
+.nav-container ul.nav > li{margin:0 0 7px 0}
+.nav-container a{cursor:pointer;}
+.nav-container a.active{color:#fff}
+
+</style>
+
+<title>Galaxy Zoo : Mergers - JSPAM</title>
+<script src="data.js" ></script>
+<script src="spam.js" ></script>
+
+    <script type="text/javascript">
+      var np = 100;
+      var points;
+      var maxx = 10;
+      var minx = -10;
+      var maxy = 10;
+      var miny = -10;
+
+        var myRun = new SPAMRun();
+        myRun.init();
+        var sind = 0;
+        function setData()
+        {
+            var x=document.getElementById("sims");
+            x.remove(0);
+for(var i=0; i<stateInfos.length; i++)
+{
+            var option=document.createElement("option");
+            option.text=stateInfos[i][3];
+            option.value=i;
+            try
+            {
+              // for IE earlier than version 8
+              x.add(option,x.options[null]);
+            }
+            catch (e)
+            {
+              x.add(option,null);
+            }
+}
+        }
+
+    function selectSim()
+    {
+        var x=document.getElementById("sims");
+        sind = x.selectedIndex;
+        x=document.getElementById("simScale");
+        x.value=stateInfos[sind][2];
+        x=document.getElementById("simTime");
+        x.value=stateInfos[sind][1];
+        x=document.getElementById("simName");
+        x.value=stateInfos[sind][3];
+    }
+    </script>
+
+    <script type="text/javascript">
+      var cname = 'mc';
+
+
+      var canvas;
+      var ctx;
+      function init()
+      {
+            var x=document.getElementById("sims");
+        sind = x.selectedIndex;
+        maxx = parseDouble(stateInfos[sind][2]);
+        minx = -maxx;
+        maxy = maxx;
+        miny = minx;
+        myRun.initRun(stateInfos[sind]);
+        points = myRun.x0;
+        np = points.length;
+        canvas = document.getElementById(cname);
+        if (canvas.getContext){
+          ctx = canvas.getContext('2d');
+          integrate();
+           
+        }
+      }
+
+      function integrate()
+      {
+          draw();
+if(myRun.params.time < 0)
+{
+for(var i=0; i<20; i++) myRun.takeAStep();
+          window.setTimeout(integrate,0);
+}
+      }
+
+      function draw(){
+        var w = canvas.width;
+        var h = canvas.height;
+        var rngx = maxx-minx;
+        var rngy = maxy-miny;
+        var fx = w/rngx;
+        var fy = h/rngy;
+        ctx.fillStyle = "rgb(200,200,200)";
+        ctx.fillRect (0,0,w,h);
+        ctx.fillStyle = "rgb(200,0,0)";
+          var x = 0;
+          var y = 0;
+          var i = 0;
+          for(i=0; i<np; i++)
+          {
+            x = points[i][0];
+            y = points[i][1];
+            x = x-minx;
+            x *= fx;
+            y = y-miny;
+            y *= fy;
+            y = h - y;
+//alert(x + "\t" + y);
+            ctx.fillRect (x, y, 2, 2);
+          }
+      }
+
+      function checkTgt()
+      {
+          var tgt = new String(window.location);
+          var n = tgt.indexOf("?tgt=");
+          if(n == -1) return;
+
+          tgt = tgt.substring(n+5).trim();
+          n = tgt.indexOf("hst");
+          if(n == 0) tgt = tgt.substring(3);
+          var x=document.getElementById("sims");
+          var opts = x.options;
+          var opt = null;
+          var str = null;
+          var found = false;
+          for(var i=0; i<opts.length; i++)
+          {
+              opt = opts[i];
+              opt.selected = false;
+              str = new String(opt.text);
+              n = str.indexOf(tgt);
+              if(n > -1)
+              {
+                  opt.selected = true;
+                  found = true;
+                  break;
+              }
+          }
+
+          if(found)
+          {
+              selectSim();
+              init();
+          }
+      }
+
+
+    </script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+</head>
+<body onload="checkTgt();">
+<h1>JSPAM</h1>
+<p>This page contains an JavaScript implementation of the JSPAM restricted three-body simulation code.  For the Fortran and Java source code, please visit the <a href="https://github.com/jfwallin/JSPAM">GitHub repository.</a></p>
+<p><a href="https://github.com/jfwallin/JSPAM">https://github.com/jfwallin/JSPAM</a></p>
+<p>To return to the data release site, click <a href="../../mergers.html">here</a>.</p>
+<hr>
+<p>Select the target system you wish to simulate and then click run.  The software uses the best-fit parameters to run the simulation.</p>
+<table border="0">
+<tr>
+<td>
+<canvas id="mc" width="500" height="500">
+</canvas>
+</td>
+<td>
+<center>
+
+<form name="spam" id="spam">
+
+<table border="0">
+<tr>
+<td>Select System</td>
+<td>
+<select name="sims" id="sims" onchange="selectSim();">
+<option value="-1">SDSS Object ID placeholder</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Name:</td>
+<td><input type="text" id="simName" />
+</tr>
+<tr>
+<td>Backwards Integration Time:</td>
+<td><input type="text" id="simTime" />
+</tr>
+<tr>
+<td>Display Scale:</td>
+<td><input type="text" id="simScale" />
+</tr>
+<tr>
+<td>
+<input type="button" onclick="init();" value="Run" />
+</td>
+</tr>
+</table>
+</center>
+</form>
+
+
+</td>
+</tr>
+</table>
+
+    <script type="text/javascript">
+      setData();
+      selectSim();
+    </script>
+</body>
+</html>
