@@ -15,4 +15,8 @@ To deploy changes, use node v0.10.x, eg:
 
 ```
 nvm use v0.10
+npm install
+npm run-script deploy
 ```
+
+Make sure you have variables set for `AMAZON_ACCESS_KEY_ID` and `AMAZON_SECRET_ACCESS_KEY` before running the final deploy step.
