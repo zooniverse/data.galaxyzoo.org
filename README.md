@@ -7,7 +7,7 @@ To run locally, first make sure the repo files are updated. Then run the command
 
 Then open the following in the browser to view the page:
 
-    localhost:8000
+    localhost:8000/public/
 
 Other static file servers can also be run in the root directory if you prefer. 
 

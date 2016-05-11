@@ -1,0 +1,126 @@
+Contact:    Brooke Simmons (bdsimmons@ucsd.edu) with any questions.
+
+Reference:  The project and data release are described in Simmons et al. (2016, submitted).
+            Please cite this paper if making use of any data in this table in publications.
+
+Description: Depth-corrected morphological classifications of galaxies from Galaxy Zoo: CANDELS
+
+             This table includes depth-corrected classifications for 10,648 galaxies
+             with morphological measurements in multiple epochs (see Section 3.8 in Simmons+16).
+
+             The structure of the data for each task number NN with i = 0 to n−1 responses is as follows:
+             
+             t[NN]_[quest abbrev]_a[i]_[resp abbrev]_deepcorr : the weighted fraction of classifiers 
+                who gave this response, corrected from the deep-exposure classification. 
+                quest abbrev and resp abbrev are abbreviated versions
+                of the specific question and response, respectively.
+
+             t[NN]_[quest abbrev]_a[i]_[resp abbrev]_2epochdiff : the difference in weighted
+                vote fractions between the ''deep'' and ''shallow'' imaging. Defined as
+                2epochdiff = (deep - shallow).
+                
+
+
+name                                                                            class       format code     description
+----------------------------------------------------------------------------------------------------------------------------------
+hubble_id_base                                                                  string          9A          string identifying galaxy; COS_* are galaxies from COSMOS, GDS_* from GOODS-S, and UDS_* from UDS
+t00_smooth_or_featured_a0_smooth_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "smooth" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a1_features_weighted_frac_deepcorr                       double          D           depth-corrected weighted fraction of votes for "features or disk" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a2_artifact_weighted_frac_deepcorr                       double          D           depth-corrected weighted fraction of votes for "star or artifact" out of all responses to Task 00 for this galaxy
+t01_how_rounded_a0_completely_weighted_frac_deepcorr                            double          D           depth-corrected weighted fraction of votes for "completely round" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a1_inbetween_weighted_frac_deepcorr                             double          D           depth-corrected weighted fraction of votes for "in-between" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a2_cigarshaped_weighted_frac_deepcorr                           double          D           depth-corrected weighted fraction of votes for "cigar-shaped" out of all responses to Task 01 for this galaxy
+t02_clumpy_appearance_a0_yes_weighted_frac_deepcorr                             double          D           depth-corrected weighted fraction of votes for "yes (clumpy)" out of all responses to Task 02 for this galaxy
+t02_clumpy_appearance_a1_no_weighted_frac_deepcorr                              double          D           depth-corrected weighted fraction of votes for "no (clumpy)" out of all responses to Task 02 for this galaxy
+t03_how_many_clumps_a0_1_weighted_frac_deepcorr                                 double          D           depth-corrected weighted fraction of votes for "1 clump" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a1_2_weighted_frac_deepcorr                                 double          D           depth-corrected weighted fraction of votes for "2 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a2_3_weighted_frac_deepcorr                                 double          D           depth-corrected weighted fraction of votes for "3 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a3_4_weighted_frac_deepcorr                                 double          D           depth-corrected weighted fraction of votes for "4 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a4_5_plus_weighted_frac_deepcorr                            double          D           depth-corrected weighted fraction of votes for "5+ clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a5_cant_tell_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "can't tell how many clumps" out of all responses to Task 03 for this galaxy
+t04_clump_configuration_a0_straight_line_weighted_frac_deepcorr                 double          D           depth-corrected weighted fraction of votes for "straight line of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a1_chain_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "chain of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a2_cluster_or_irregular_weighted_frac_deepcorr          double          D           depth-corrected weighted fraction of votes for "clustered/irregular clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a3_spiral_weighted_frac_deepcorr                        double          D           depth-corrected weighted fraction of votes for "spiral clumps" out of all responses to Task 04 for this galaxy
+t05_is_one_clump_brightest_a0_yes_weighted_frac_deepcorr                        double          D           depth-corrected weighted fraction of votes for "one clump is brightest" out of all responses to Task 05 for this galaxy
+t05_is_one_clump_brightest_a1_no_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "no single brightest clump" out of all responses to Task 05 for this galaxy
+t06_brightest_clump_central_a0_yes_weighted_frac_deepcorr                       double          D           depth-corrected weighted fraction of votes for "brightest clump is at center" out of all responses to Task 06 for this galaxy
+t06_brightest_clump_central_a1_no_weighted_frac_deepcorr                        double          D           depth-corrected weighted fraction of votes for "brightest clump is not at center" out of all responses to Task 06 for this galaxy
+t07_galaxy_symmetrical_a0_yes_weighted_frac_deepcorr                            double          D           depth-corrected weighted fraction of votes for "clumps are symmetrical" out of all responses to Task 07 for this galaxy
+t07_galaxy_symmetrical_a1_no_weighted_frac_deepcorr                             double          D           depth-corrected weighted fraction of votes for "clumps are not symmetrical" out of all responses to Task 07 for this galaxy
+t08_clumps_embedded_larger_object_a0_yes_weighted_frac_deepcorr                 double          D           depth-corrected weighted fraction of votes for "clumps are embedded" out of all responses to Task 08 for this galaxy
+t08_clumps_embedded_larger_object_a1_no_weighted_frac_deepcorr                  double          D           depth-corrected weighted fraction of votes for "clumps are not embedded" out of all responses to Task 08 for this galaxy
+t09_disk_edge_on_a0_yes_weighted_frac_deepcorr                                  double          D           depth-corrected weighted fraction of votes for "disk, edge-on" out of all responses to Task 09 for this galaxy
+t09_disk_edge_on_a1_no_weighted_frac_deepcorr                                   double          D           depth-corrected weighted fraction of votes for "disk, not edge-on" out of all responses to Task 09 for this galaxy
+t10_edge_on_bulge_a0_yes_weighted_frac_deepcorr                                 double          D           depth-corrected weighted fraction of votes for "bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t10_edge_on_bulge_a1_no_weighted_frac_deepcorr                                  double          D           depth-corrected weighted fraction of votes for "no bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t11_bar_feature_a0_yes_weighted_frac_deepcorr                                   double          D           depth-corrected weighted fraction of votes for "bar" out of all responses to Task 11 for this galaxy
+t11_bar_feature_a1_no_weighted_frac_deepcorr                                    double          D           depth-corrected weighted fraction of votes for "no bar" out of all responses to Task 11 for this galaxy
+t12_spiral_pattern_a0_yes_weighted_frac_deepcorr                                double          D           depth-corrected weighted fraction of votes for "spiral arms" out of all responses to Task 12 for this galaxy
+t12_spiral_pattern_a1_no_weighted_frac_deepcorr                                 double          D           depth-corrected weighted fraction of votes for "no spiral arms" out of all responses to Task 12 for this galaxy
+t13_spiral_arm_winding_a0_tight_weighted_frac_deepcorr                          double          D           depth-corrected weighted fraction of votes for "tightly-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a1_medium_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "medium-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a2_loose_weighted_frac_deepcorr                          double          D           depth-corrected weighted fraction of votes for "loosely-wound spiral arms" out of all responses to Task 13 for this galaxy
+t14_spiral_arm_count_a0_1_weighted_frac_deepcorr                                double          D           depth-corrected weighted fraction of votes for "1 spiral arm" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a1_2_weighted_frac_deepcorr                                double          D           depth-corrected weighted fraction of votes for "2 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a2_3_weighted_frac_deepcorr                                double          D           depth-corrected weighted fraction of votes for "3 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a3_4_weighted_frac_deepcorr                                double          D           depth-corrected weighted fraction of votes for "4 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a4_5_plus_weighted_frac_deepcorr                           double          D           depth-corrected weighted fraction of votes for "5+ spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a5_cant_tell_weighted_frac_deepcorr                        double          D           depth-corrected weighted fraction of votes for "can't tell how many spiral arms" out of all responses to Task 14 for this galaxy
+t15_bulge_prominence_a0_no_bulge_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "no bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a1_obvious_weighted_frac_deepcorr                          double          D           depth-corrected weighted fraction of votes for "obvious bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a2_dominant_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "dominant bulge" out of all responses to Task 15 for this galaxy
+t16_merging_tidal_debris_a0_merging_weighted_frac_deepcorr                      double          D           depth-corrected weighted fraction of votes for "merging galaxies" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a1_tidal_debris_weighted_frac_deepcorr                 double          D           depth-corrected weighted fraction of votes for "tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a2_both_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "merging galaxies and tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a3_neither_weighted_frac_deepcorr                      double          D           depth-corrected weighted fraction of votes for "neither merging galaxies nor tidal debris" out of all responses to Task 16 for this galaxy
+t00_smooth_or_featured_a0_smooth_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "smooth" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a1_features_weighted_frac_2epochdiff                     double          D           difference between deep and shallow weighted fractions for "features or disk" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a2_artifact_weighted_frac_2epochdiff                     double          D           difference between deep and shallow weighted fractions for "star or artifact" out of all responses to Task 00 for this galaxy
+t01_how_rounded_a0_completely_weighted_frac_2epochdiff                          double          D           difference between deep and shallow weighted fractions for "completely round" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a1_inbetween_weighted_frac_2epochdiff                           double          D           difference between deep and shallow weighted fractions for "in-between" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a2_cigarshaped_weighted_frac_2epochdiff                         double          D           difference between deep and shallow weighted fractions for "cigar-shaped" out of all responses to Task 01 for this galaxy
+t02_clumpy_appearance_a0_yes_weighted_frac_2epochdiff                           double          D           difference between deep and shallow weighted fractions for "yes (clumpy)" out of all responses to Task 02 for this galaxy
+t02_clumpy_appearance_a1_no_weighted_frac_2epochdiff                            double          D           difference between deep and shallow weighted fractions for "no (clumpy)" out of all responses to Task 02 for this galaxy
+t03_how_many_clumps_a0_1_weighted_frac_2epochdiff                               double          D           difference between deep and shallow weighted fractions for "1 clump" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a1_2_weighted_frac_2epochdiff                               double          D           difference between deep and shallow weighted fractions for "2 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a2_3_weighted_frac_2epochdiff                               double          D           difference between deep and shallow weighted fractions for "3 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a3_4_weighted_frac_2epochdiff                               double          D           difference between deep and shallow weighted fractions for "4 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a4_5_plus_weighted_frac_2epochdiff                          double          D           difference between deep and shallow weighted fractions for "5+ clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a5_cant_tell_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "can't tell how many clumps" out of all responses to Task 03 for this galaxy
+t04_clump_configuration_a0_straight_line_weighted_frac_2epochdiff               double          D           difference between deep and shallow weighted fractions for "straight line of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a1_chain_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "chain of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a2_cluster_or_irregular_weighted_frac_2epochdiff        double          D           difference between deep and shallow weighted fractions for "clustered/irregular clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a3_spiral_weighted_frac_2epochdiff                      double          D           difference between deep and shallow weighted fractions for "spiral clumps" out of all responses to Task 04 for this galaxy
+t05_is_one_clump_brightest_a0_yes_weighted_frac_2epochdiff                      double          D           difference between deep and shallow weighted fractions for "one clump is brightest" out of all responses to Task 05 for this galaxy
+t05_is_one_clump_brightest_a1_no_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "no single brightest clump" out of all responses to Task 05 for this galaxy
+t06_brightest_clump_central_a0_yes_weighted_frac_2epochdiff                     double          D           difference between deep and shallow weighted fractions for "brightest clump is at center" out of all responses to Task 06 for this galaxy
+t06_brightest_clump_central_a1_no_weighted_frac_2epochdiff                      double          D           difference between deep and shallow weighted fractions for "brightest clump is not at center" out of all responses to Task 06 for this galaxy
+t07_galaxy_symmetrical_a0_yes_weighted_frac_2epochdiff                          double          D           difference between deep and shallow weighted fractions for "clumps are symmetrical" out of all responses to Task 07 for this galaxy
+t07_galaxy_symmetrical_a1_no_weighted_frac_2epochdiff                           double          D           difference between deep and shallow weighted fractions for "clumps are not symmetrical" out of all responses to Task 07 for this galaxy
+t08_clumps_embedded_larger_object_a0_yes_weighted_frac_2epochdiff               double          D           difference between deep and shallow weighted fractions for "clumps are embedded" out of all responses to Task 08 for this galaxy
+t08_clumps_embedded_larger_object_a1_no_weighted_frac_2epochdiff                double          D           difference between deep and shallow weighted fractions for "clumps are not embedded" out of all responses to Task 08 for this galaxy
+t09_disk_edge_on_a0_yes_weighted_frac_2epochdiff                                double          D           difference between deep and shallow weighted fractions for "disk, edge-on" out of all responses to Task 09 for this galaxy
+t09_disk_edge_on_a1_no_weighted_frac_2epochdiff                                 double          D           difference between deep and shallow weighted fractions for "disk, not edge-on" out of all responses to Task 09 for this galaxy
+t10_edge_on_bulge_a0_yes_weighted_frac_2epochdiff                               double          D           difference between deep and shallow weighted fractions for "bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t10_edge_on_bulge_a1_no_weighted_frac_2epochdiff                                double          D           difference between deep and shallow weighted fractions for "no bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t11_bar_feature_a0_yes_weighted_frac_2epochdiff                                 double          D           difference between deep and shallow weighted fractions for "bar" out of all responses to Task 11 for this galaxy
+t11_bar_feature_a1_no_weighted_frac_2epochdiff                                  double          D           difference between deep and shallow weighted fractions for "no bar" out of all responses to Task 11 for this galaxy
+t12_spiral_pattern_a0_yes_weighted_frac_2epochdiff                              double          D           difference between deep and shallow weighted fractions for "spiral arms" out of all responses to Task 12 for this galaxy
+t12_spiral_pattern_a1_no_weighted_frac_2epochdiff                               double          D           difference between deep and shallow weighted fractions for "no spiral arms" out of all responses to Task 12 for this galaxy
+t13_spiral_arm_winding_a0_tight_weighted_frac_2epochdiff                        double          D           difference between deep and shallow weighted fractions for "tightly-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a1_medium_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "medium-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a2_loose_weighted_frac_2epochdiff                        double          D           difference between deep and shallow weighted fractions for "loosely-wound spiral arms" out of all responses to Task 13 for this galaxy
+t14_spiral_arm_count_a0_1_weighted_frac_2epochdiff                              double          D           difference between deep and shallow weighted fractions for "1 spiral arm" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a1_2_weighted_frac_2epochdiff                              double          D           difference between deep and shallow weighted fractions for "2 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a2_3_weighted_frac_2epochdiff                              double          D           difference between deep and shallow weighted fractions for "3 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a3_4_weighted_frac_2epochdiff                              double          D           difference between deep and shallow weighted fractions for "4 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a4_5_plus_weighted_frac_2epochdiff                         double          D           difference between deep and shallow weighted fractions for "5+ spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a5_cant_tell_weighted_frac_2epochdiff                      double          D           difference between deep and shallow weighted fractions for "can't tell how many spiral arms" out of all responses to Task 14 for this galaxy
+t15_bulge_prominence_a0_no_bulge_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "no bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a1_obvious_weighted_frac_2epochdiff                        double          D           difference between deep and shallow weighted fractions for "obvious bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a2_dominant_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "dominant bulge" out of all responses to Task 15 for this galaxy
+t16_merging_tidal_debris_a0_merging_weighted_frac_2epochdiff                    double          D           difference between deep and shallow weighted fractions for "merging galaxies" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a1_tidal_debris_weighted_frac_2epochdiff               double          D           difference between deep and shallow weighted fractions for "tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a2_both_weighted_frac_2epochdiff                       double          D           difference between deep and shallow weighted fractions for "merging galaxies and tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a3_neither_weighted_frac_2epochdiff                    double          D           difference between deep and shallow weighted fractions for "neither merging galaxies nor tidal debris" out of all responses to Task 16 for this galaxy

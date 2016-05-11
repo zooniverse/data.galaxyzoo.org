@@ -1,0 +1,14 @@
+Contact:    Brooke Simmons (bdsimmons@ucsd.edu) with any questions.
+
+Reference:  The project and data release are described in Simmons et al. (2016, submitted).
+            Please cite this paper if making use of any data in this table in publications.
+
+Description: Galaxies identified in Galaxy Zoo: CANDELS as "smooth", having 1 < z < 3 and 
+             mu_sb < 24.5 mag arcsec^−2 and bulge-to-total ratio less than 50 per cent 
+             (flux-summed across IJH bands) according to the MegaMorph project (Hauessler et al. 2013).
+
+name                                                                            class       format code     description
+----------------------------------------------------------------------------------------------------------------------------------
+ID                                                                              string          9A          string identifying galaxy; COS_* are galaxies from COSMOS, GDS_* from GOODS-S, and UDS_* from UDS
+t00_smooth_or_featured_a0_smooth_weighted_frac                                  double          D           weighted fraction of votes for "smooth" out of all responses to Task 00 for this galaxy
+mu_sb                                                                           double          D           H-band surface brightness [mag arcsec^-2]
