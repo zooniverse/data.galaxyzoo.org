@@ -6,6 +6,7 @@ Reference:  The project and data release are described in Simmons et al. (2016, 
 Description: Galaxies identified in Galaxy Zoo: CANDELS as "smooth", having 1 < z < 3 and 
              mu_sb < 24.5 mag arcsec^−2 and bulge-to-total ratio less than 50 per cent 
              (flux-summed across IJH bands) according to the MegaMorph project (Hauessler et al. 2013).
+             There are a total of 1,096 galaxies in this table.
 
 name                                                                            class       format code     description
 ----------------------------------------------------------------------------------------------------------------------------------
