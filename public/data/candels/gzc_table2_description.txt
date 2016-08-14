@@ -176,5 +176,6 @@ measured_corr                                                       boolean     
 clean_smooth                                                        boolean     L               true if f_smooth >= 0.8
 clean_featured                                                      boolean     L               true if f_features >= 0.7
 clean_clumpy                                                        boolean     L               true if f_features >= 0.4 and f_clumpy >= 0.7 and N_clumpy >= 10 and f_neither > 0.25
-clean_edgeon                                                        boolean     L               true if f_features >= 0.4 and f_notclumpy >= 0.3 and f_edgeon > 0.7 and N_edgeon > 10
+clean_edge_on                                                       boolean     L               true if f_features >= 0.4 and f_notclumpy >= 0.3 and f_edgeon > 0.7 and N_edgeon > 10
 clean_spiral                                                        boolean     L               true if f_features >= 0.4 and f_notclumpy >= 0.3 and f_notedgeon >= 0.5 and f_spiral >= 0.8 and N_spiral >= 10
+smooth_disk                                                         boolean     L               true if B/Tot < 0.5 and f_smooth >= 0.6 and acceptable data quality according to criteria described in Section 5
