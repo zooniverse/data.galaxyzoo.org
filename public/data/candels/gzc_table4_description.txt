@@ -23,7 +23,7 @@ Description: Depth-corrected morphological classifications of galaxies from Gala
 
 name                                                                            class       format code     description
 ----------------------------------------------------------------------------------------------------------------------------------
-hubble_id_base                                                                  string          9A          string identifying galaxy; COS_* are galaxies from COSMOS, GDS_* from GOODS-S, and UDS_* from UDS
+ID                                                                              string          9A          string identifying galaxy; COS_* are galaxies from COSMOS, GDS_* from GOODS-S, and UDS_* from UDS
 t00_smooth_or_featured_a0_smooth_weighted_frac_deepcorr                         double          D           depth-corrected weighted fraction of votes for "smooth" out of all responses to Task 00 for this galaxy
 t00_smooth_or_featured_a1_features_weighted_frac_deepcorr                       double          D           depth-corrected weighted fraction of votes for "features or disk" out of all responses to Task 00 for this galaxy
 t00_smooth_or_featured_a2_artifact_weighted_frac_deepcorr                       double          D           depth-corrected weighted fraction of votes for "star or artifact" out of all responses to Task 00 for this galaxy
