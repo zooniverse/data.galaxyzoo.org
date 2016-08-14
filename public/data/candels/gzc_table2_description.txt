@@ -33,7 +33,7 @@ Description: Morphological classifications of galaxies from Galaxy Zoo: CANDELS
 
 name                                                                class       format code     description
 ----------------------------------------------------------------------------------------------------------------------------------
-hubble_id_base                                                      string      9A              string identifying galaxy; COS_* are galaxies from COSMOS, GDS_* from GOODS-S, and UDS_* from UDS
+ID                                                                  string      9A              string identifying galaxy; COS_* are galaxies from COSMOS, GDS_* from GOODS-S, and UDS_* from UDS
 RA                                                                  double      D               right ascension [J2000.0]
 Dec                                                                 double      D               declination [J2000.0]
 num_classifications                                                 float       E               total number of independent classifications of this galaxy in GZC
