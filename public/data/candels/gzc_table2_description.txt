@@ -1,0 +1,181 @@
+Contact:    Brooke Simmons (bdsimmons@ucsd.edu) with any questions.
+
+Reference:  The project and data release are described in Simmons et al. (2016, submitted).
+            Please cite this paper if making use of any data in this table in publications.
+
+Description: Morphological classifications of galaxies from Galaxy Zoo: CANDELS
+
+             This table includes all 49,555 galaxies included in GZC, which had M_H <= 25.5
+             and were selected from the COSMOS, GOODS-S, and UDS fields.  Morphological
+             classifications include both unweighted and weighted versions of the vote
+             fractions of the responses to each task, as well as the total count and weighted
+             count of votes for each task. The final five columns give boolean flags for
+             galaxies in various "clean" morphological samples (see Table 3 in paper).
+
+             This paper includes the release of the raw and weighted classifications for each
+             of the 49,555 subjects in the Galaxy Zoo CANDELS sample. In addition to each raw
+             and weighted vote fraction for each task, we include the raw and weighted number
+             of answers to each task, as well as the total raw and weighted classifier count
+             for each subject. This combines for a total of 136 quantities for each subject,
+             not including the subject ID or any other metadata. The structure of the data for
+             each task number NN with i = 0 to n−1 responses is as follows:
+             
+             t[NN]_[quest abbrev]_a[i]_[resp abbrev]_frac : the raw fraction of classifiers 
+                who gave this response.  quest abbrev and resp abbrev are abbreviated versions
+                of the specific question and response, respectively.
+
+             t[NN]_[quest abbrev]_a[i]_[resp abbrev]_weighted_frac : the weighted fraction of
+                classifiers who gave this response.
+
+             t[NN]_[quest abbrev]_count : the raw count of classifiers who responded to this task.
+
+             t[NN]_[quest abbrev]_weight : the weighted count of classifiers who responded to this task.
+
+name                                                                class       format code     description
+----------------------------------------------------------------------------------------------------------------------------------
+ID                                                                  string      9A              string identifying galaxy; COS_* are galaxies from COSMOS, GDS_* from GOODS-S, and UDS_* from UDS
+RA                                                                  double      D               right ascension [J2000.0]
+Dec                                                                 double      D               declination [J2000.0]
+num_classifications                                                 float       E               total number of independent classifications of this galaxy in GZC
+num_classifications_weighted                                        double      D               total number of independent classifications, weighted by consistency
+t00_smooth_or_featured_a0_smooth_frac                               double      D               fraction of votes for "smooth" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a1_features_frac                             double      D               fraction of votes for "features or disk" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a2_artifact_frac                             double      D               fraction of votes for "star or artifact" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a0_smooth_weighted_frac                      double      D               weighted fraction of votes for "smooth" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a1_features_weighted_frac                    double      D               weighted fraction of votes for "features or disk" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_a2_artifact_weighted_frac                    double      D               weighted fraction of votes for "star or artifact" out of all responses to Task 00 for this galaxy
+t00_smooth_or_featured_count                                        float       E               total number of responses to Task 00 for this galaxy
+t00_smooth_or_featured_weight                                       double      D               weighted number of responses to Task 00 for this galaxy
+t01_how_rounded_a0_completely_frac                                  double      D               fraction of votes for "completely round" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a1_inbetween_frac                                   double      D               fraction of votes for "in-between" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a2_cigarshaped_frac                                 double      D               fraction of votes for "cigar-shaped" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a0_completely_weighted_frac                         double      D               weighted fraction of votes for "completely round" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a1_inbetween_weighted_frac                          double      D               weighted fraction of votes for "in-between" out of all responses to Task 01 for this galaxy
+t01_how_rounded_a2_cigarshaped_weighted_frac                        double      D               weighted fraction of votes for "cigar-shaped" out of all responses to Task 01 for this galaxy
+t01_how_rounded_count                                               float       E               total number of responses to Task 01 for this galaxy
+t01_how_rounded_weight                                              double      D               weighted number of responses to Task 01 for this galaxy
+t02_clumpy_appearance_a0_yes_frac                                   double      D               fraction of votes for "yes (clumpy)" out of all responses to Task 02 for this galaxy
+t02_clumpy_appearance_a1_no_frac                                    double      D               fraction of votes for "no (clumpy)" out of all responses to Task 02 for this galaxy
+t02_clumpy_appearance_a0_yes_weighted_frac                          double      D               weighted fraction of votes for "yes (clumpy)" out of all responses to Task 02 for this galaxy
+t02_clumpy_appearance_a1_no_weighted_frac                           double      D               weighted fraction of votes for "no (clumpy)" out of all responses to Task 02 for this galaxy
+t02_clumpy_appearance_count                                         float       E               total number of responses to Task 02 for this galaxy
+t02_clumpy_appearance_weight                                        double      D               weighted number of responses to Task 02 for this galaxy
+t03_how_many_clumps_a0_1_frac                                       double      D               fraction of votes for "1 clump" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a1_2_frac                                       double      D               fraction of votes for "2 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a2_3_frac                                       double      D               fraction of votes for "3 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a3_4_frac                                       double      D               fraction of votes for "4 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a4_5_plus_frac                                  double      D               fraction of votes for "5+ clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a5_cant_tell_frac                               double      D               fraction of votes for "can't tell how many clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a0_1_weighted_frac                              double      D               weighted fraction of votes for "1 clump" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a1_2_weighted_frac                              double      D               weighted fraction of votes for "2 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a2_3_weighted_frac                              double      D               weighted fraction of votes for "3 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a3_4_weighted_frac                              double      D               weighted fraction of votes for "4 clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a4_5_plus_weighted_frac                         double      D               weighted fraction of votes for "5+ clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_a5_cant_tell_weighted_frac                      double      D               weighted fraction of votes for "can't tell how many clumps" out of all responses to Task 03 for this galaxy
+t03_how_many_clumps_count                                           float       E               total number of responses to Task 03 for this galaxy
+t03_how_many_clumps_weight                                          double      D               weighted number of responses to Task 03 for this galaxy
+t04_clump_configuration_a0_straight_line_frac                       double      D               fraction of votes for "straight line of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a1_chain_frac                               double      D               fraction of votes for "chain of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a2_cluster_or_irregular_frac                double      D               fraction of votes for "clustered/irregular clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a3_spiral_frac                              double      D               fraction of votes for "spiral clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a0_straight_line_weighted_frac              double      D               weighted fraction of votes for "straight line of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a1_chain_weighted_frac                      double      D               weighted fraction of votes for "chain of clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a2_cluster_or_irregular_weighted_frac       double      D               weighted fraction of votes for "clustered/irregular clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_a3_spiral_weighted_frac                     double      D               weighted fraction of votes for "spiral clumps" out of all responses to Task 04 for this galaxy
+t04_clump_configuration_count                                       float       E               total number of responses to Task 04 for this galaxy
+t04_clump_configuration_weight                                      double      D               weighted number of responses to Task 04 for this galaxy
+t05_is_one_clump_brightest_a0_yes_frac                              double      D               fraction of votes for "one clump is brightest" out of all responses to Task 05 for this galaxy
+t05_is_one_clump_brightest_a1_no_frac                               double      D               fraction of votes for "no single brightest clump" out of all responses to Task 05 for this galaxy
+t05_is_one_clump_brightest_a0_yes_weighted_frac                     double      D               weighted fraction of votes for "one clump is brightest" out of all responses to Task 05 for this galaxy
+t05_is_one_clump_brightest_a1_no_weighted_frac                      double      D               weighted fraction of votes for "no single brightest clump" out of all responses to Task 05 for this galaxy
+t05_is_one_clump_brightest_count                                    float       E               total number of responses to Task 05 for this galaxy
+t05_is_one_clump_brightest_weight                                   double      D               weighted number of responses to Task 05 for this galaxy
+t06_brightest_clump_central_a0_yes_frac                             double      D               fraction of votes for "brightest clump is at center" out of all responses to Task 06 for this galaxy
+t06_brightest_clump_central_a1_no_frac                              double      D               fraction of votes for "brightest clump is not at center" out of all responses to Task 06 for this galaxy
+t06_brightest_clump_central_a0_yes_weighted_frac                    double      D               weighted fraction of votes for "brightest clump is at center" out of all responses to Task 06 for this galaxy
+t06_brightest_clump_central_a1_no_weighted_frac                     double      D               weighted fraction of votes for "brightest clump is not at center" out of all responses to Task 06 for this galaxy
+t06_brightest_clump_central_count                                   float       E               total number of responses to Task 06 for this galaxy
+t06_brightest_clump_central_weight                                  double      D               weighted number of responses to Task 06 for this galaxy
+t07_galaxy_symmetrical_a0_yes_frac                                  double      D               fraction of votes for "clumps are symmetrical" out of all responses to Task 07 for this galaxy
+t07_galaxy_symmetrical_a1_no_frac                                   double      D               fraction of votes for "clumps are not symmetrical" out of all responses to Task 07 for this galaxy
+t07_galaxy_symmetrical_a0_yes_weighted_frac                         double      D               weighted fraction of votes for "clumps are symmetrical" out of all responses to Task 07 for this galaxy
+t07_galaxy_symmetrical_a1_no_weighted_frac                          double      D               weighted fraction of votes for "clumps are not symmetrical" out of all responses to Task 07 for this galaxy
+t07_galaxy_symmetrical_count                                        float       E               total number of responses to Task 07 for this galaxy
+t07_galaxy_symmetrical_weight                                       double      D               weighted number of responses to Task 07 for this galaxy
+t08_clumps_embedded_larger_object_a0_yes_frac                       double      D               fraction of votes for "clumps are embedded" out of all responses to Task 08 for this galaxy
+t08_clumps_embedded_larger_object_a1_no_frac                        double      D               fraction of votes for "clumps are not embedded" out of all responses to Task 08 for this galaxy
+t08_clumps_embedded_larger_object_a0_yes_weighted_frac              double      D               weighted fraction of votes for "clumps are embedded" out of all responses to Task 08 for this galaxy
+t08_clumps_embedded_larger_object_a1_no_weighted_frac               double      D               weighted fraction of votes for "clumps are not embedded" out of all responses to Task 08 for this galaxy
+t08_clumps_embedded_larger_object_count                             float       E               total number of responses to Task 08 for this galaxy
+t08_clumps_embedded_larger_object_weight                            double      D               weighted number of responses to Task 08 for this galaxy
+t09_disk_edge_on_a0_yes_frac                                        double      D               fraction of votes for "disk, edge-on" out of all responses to Task 09 for this galaxy
+t09_disk_edge_on_a1_no_frac                                         double      D               fraction of votes for "disk, not edge-on" out of all responses to Task 09 for this galaxy
+t09_disk_edge_on_a0_yes_weighted_frac                               double      D               weighted fraction of votes for "disk, edge-on" out of all responses to Task 09 for this galaxy
+t09_disk_edge_on_a1_no_weighted_frac                                double      D               weighted fraction of votes for "disk, not edge-on" out of all responses to Task 09 for this galaxy
+t09_disk_edge_on_count                                              float       E               total number of responses to Task 09 for this galaxy
+t09_disk_edge_on_weight                                             double      D               weighted number of responses to Task 09 for this galaxy
+t10_edge_on_bulge_a0_yes_frac                                       double      D               fraction of votes for "bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t10_edge_on_bulge_a1_no_frac                                        double      D               fraction of votes for "no bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t10_edge_on_bulge_a0_yes_weighted_frac                              double      D               weighted fraction of votes for "bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t10_edge_on_bulge_a1_no_weighted_frac                               double      D               weighted fraction of votes for "no bulge in edge-on disk" out of all responses to Task 10 for this galaxy
+t10_edge_on_bulge_count                                             float       E               total number of responses to Task 10 for this galaxy
+t10_edge_on_bulge_weight                                            double      D               weighted number of responses to Task 10 for this galaxy
+t11_bar_feature_a0_yes_frac                                         double      D               fraction of votes for "bar" out of all responses to Task 11 for this galaxy
+t11_bar_feature_a1_no_frac                                          double      D               fraction of votes for "no bar" out of all responses to Task 11 for this galaxy
+t11_bar_feature_a0_yes_weighted_frac                                double      D               weighted fraction of votes for "bar" out of all responses to Task 11 for this galaxy
+t11_bar_feature_a1_no_weighted_frac                                 double      D               weighted fraction of votes for "no bar" out of all responses to Task 11 for this galaxy
+t11_bar_feature_count                                               float       E               total number of responses to Task 11 for this galaxy
+t11_bar_feature_weight                                              double      D               weighted number of responses to Task 11 for this galaxy
+t12_spiral_pattern_a0_yes_frac                                      double      D               fraction of votes for "spiral arms" out of all responses to Task 12 for this galaxy
+t12_spiral_pattern_a1_no_frac                                       double      D               fraction of votes for "no spiral arms" out of all responses to Task 12 for this galaxy
+t12_spiral_pattern_a0_yes_weighted_frac                             double      D               weighted fraction of votes for "spiral arms" out of all responses to Task 12 for this galaxy
+t12_spiral_pattern_a1_no_weighted_frac                              double      D               weighted fraction of votes for "no spiral arms" out of all responses to Task 12 for this galaxy
+t12_spiral_pattern_count                                            float       E               total number of responses to Task 12 for this galaxy
+t12_spiral_pattern_weight                                           double      D               weighted number of responses to Task 12 for this galaxy
+t13_spiral_arm_winding_a0_tight_frac                                double      D               fraction of votes for "tightly-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a1_medium_frac                               double      D               fraction of votes for "medium-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a2_loose_frac                                double      D               fraction of votes for "loosely-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a0_tight_weighted_frac                       double      D               weighted fraction of votes for "tightly-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a1_medium_weighted_frac                      double      D               weighted fraction of votes for "medium-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_a2_loose_weighted_frac                       double      D               weighted fraction of votes for "loosely-wound spiral arms" out of all responses to Task 13 for this galaxy
+t13_spiral_arm_winding_count                                        float       E               total number of responses to Task 13 for this galaxy
+t13_spiral_arm_winding_weight                                       double      D               weighted number of responses to Task 13 for this galaxy
+t14_spiral_arm_count_a0_1_frac                                      double      D               fraction of votes for "1 spiral arm" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a1_2_frac                                      double      D               fraction of votes for "2 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a2_3_frac                                      double      D               fraction of votes for "3 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a3_4_frac                                      double      D               fraction of votes for "4 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a4_5_plus_frac                                 double      D               fraction of votes for "5+ spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a5_cant_tell_frac                              double      D               fraction of votes for "can't tell how many spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a0_1_weighted_frac                             double      D               weighted fraction of votes for "1 spiral arm" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a1_2_weighted_frac                             double      D               weighted fraction of votes for "2 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a2_3_weighted_frac                             double      D               weighted fraction of votes for "3 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a3_4_weighted_frac                             double      D               weighted fraction of votes for "4 spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a4_5_plus_weighted_frac                        double      D               weighted fraction of votes for "5+ spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_a5_cant_tell_weighted_frac                     double      D               weighted fraction of votes for "can't tell how many spiral arms" out of all responses to Task 14 for this galaxy
+t14_spiral_arm_count_count                                          float       E               total number of responses to Task 14 for this galaxy
+t14_spiral_arm_count_weight                                         double      D               weighted number of responses to Task 14 for this galaxy
+t15_bulge_prominence_a0_no_bulge_frac                               double      D               fraction of votes for "no bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a1_obvious_frac                                double      D               fraction of votes for "obvious bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a2_dominant_frac                               double      D               fraction of votes for "dominant bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a0_no_bulge_weighted_frac                      double      D               weighted fraction of votes for "no bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a1_obvious_weighted_frac                       double      D               weighted fraction of votes for "obvious bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_a2_dominant_weighted_frac                      double      D               weighted fraction of votes for "dominant bulge" out of all responses to Task 15 for this galaxy
+t15_bulge_prominence_count                                          float       E               total number of responses to Task 15 for this galaxy
+t15_bulge_prominence_weight                                         double      D               weighted number of responses to Task 15 for this galaxy
+t16_merging_tidal_debris_a0_merging_frac                            double      D               fraction of votes for "merging galaxies" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a1_tidal_debris_frac                       double      D               fraction of votes for "tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a2_both_frac                               double      D               fraction of votes for "merging galaxies and tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a3_neither_frac                            double      D               fraction of votes for "neither merging galaxies nor tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a0_merging_weighted_frac                   double      D               weighted fraction of votes for "merging galaxies" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a1_tidal_debris_weighted_frac              double      D               weighted fraction of votes for "tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a2_both_weighted_frac                      double      D               weighted fraction of votes for "merging galaxies and tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_a3_neither_weighted_frac                   double      D               weighted fraction of votes for "neither merging galaxies nor tidal debris" out of all responses to Task 16 for this galaxy
+t16_merging_tidal_debris_count                                      float       E               total number of responses to Task 16 for this galaxy
+t16_merging_tidal_debris_weight                                     double      D               weighted number of responses to Task 16 for this galaxy
+measured_corr                                                       boolean     L               true if morphological correction can be derived based on images in multiple epochs. Links to Table 4.
+clean_smooth                                                        boolean     L               true if f_smooth >= 0.8
+clean_featured                                                      boolean     L               true if f_features >= 0.7
+clean_clumpy                                                        boolean     L               true if f_features >= 0.4 and f_clumpy >= 0.7 and N_clumpy >= 10 and f_neither > 0.25
+clean_edge_on                                                       boolean     L               true if f_features >= 0.4 and f_notclumpy >= 0.3 and f_edgeon > 0.7 and N_edgeon > 10
+clean_spiral                                                        boolean     L               true if f_features >= 0.4 and f_notclumpy >= 0.3 and f_notedgeon >= 0.5 and f_spiral >= 0.8 and N_spiral >= 10
+smooth_disk                                                         boolean     L               true if B/Tot < 0.5 and f_smooth >= 0.6 and acceptable data quality according to criteria described in Section 5
