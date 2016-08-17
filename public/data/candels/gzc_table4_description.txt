@@ -15,10 +15,6 @@ Description: Depth-corrected morphological classifications of galaxies from Gala
                 quest abbrev and resp abbrev are abbreviated versions
                 of the specific question and response, respectively.
 
-             t[NN]_[quest abbrev]_a[i]_[resp abbrev]_2epochdiff : the difference in weighted
-                vote fractions between the ''deep'' and ''shallow'' imaging. Defined as
-                2epochdiff = (deep - shallow).
-                
 
 
 name                                                                            class       format code     description
