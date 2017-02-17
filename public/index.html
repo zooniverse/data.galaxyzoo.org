@@ -388,7 +388,7 @@
 
 					<div data-scroll-index="7">
 						<h1>Galaxy Zoo 2</h1>
-                        <p> <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2 (GZ2)</a> was the successor project to Galaxy Zoo. GZ2 extends the original Galaxy Zoo classifications for a subsample of the brightest and largest galaxies in the Legacy release, measuring more detailed morphological features. This includes galactic bars, spiral arm and pitch angle, bulges, edge-on galaxies, relative ellipticities, and many others. 
+                        <p> <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2 (GZ2)</a> was the successor project to Galaxy Zoo. GZ2 extends the original Galaxy Zoo classifications for a subsample of the brightest and largest galaxies in the Legacy release, measuring more detailed morphological features. This includes galactic bars, spiral arm and pitch angle, bulges, edge-on galaxies, relative ellipticities, and many others. Two debiased Galaxy Zoo tables are provided, described in  <a href="http://arxiv.org/abs/1308.3496v2">Willett et al. (2013) </a> and <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a>: we strongly advise the use of the  <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a> table, as this debiases the GZ2 quetion tree most consistently. 
 					</div>
 
 
@@ -396,12 +396,28 @@
 						<h2>Full Catalog</h2>
                         <p>These tables provide the GZ2 classifications for nearly 300,000 galaxies in the SDSS.
 						<p>The project description and data reduction is in <a href="http://arxiv.org/abs/1308.3496v2">Willett et al. 2013, MNRAS, 435, 2835</a> &mdash; please cite this paper if making any use of the GZ2 data. The table numbers below are the same as their order in the paper.</p>
-
+                                                <br />
+						<table class="downloads">
+							<tr>
+								<td colspan="2" class="banner">Table 5 - Normal-depth sample with new debiasing method</td>
+							</tr>
+						    <tr><td colspan=2>Table 10 contains all galaxies that were debiased with the method described in <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a>. Galaxies with spectroscopic redshifts classified in GZ2 (from the GZ2 normal, extra and stripe82 normal depth), and apparent r-band magnitudes less than 17.0 are included (239,695 galaxies in total). Please cite <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a> when using these classifications.</td></tr>
+						    <tr><td colspan=2><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.txt">Column description and format</a></td></tr>
+							<tr>
+								<td>CSV</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.csv.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.csv.gz</a></td>
+							</tr>
+							<tr>
+								<td>FITS</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.fits.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.fits.gz</a></td>
+							</tr>
+							<tr>	
+								<td>VOTable</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.vot.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.vot.gz</a></td>
+							</tr>
+						</table>
 						<br />	
 
 						<table class="downloads">
 							<tr>
-								<td colspan="2" class="banner">Table 5 - Main sample, spectroscopic redshifts</td>
+								<td colspan="2" class="banner">Table 6 - Main sample, spectroscopic redshifts</td>
 							</tr>
 						    <tr><td colspan=2>Table 5 gives classifications of the 243,500 galaxies in the main sample with spectroscopic redshifts. This is the primary GZ2 data release, containing the largest number of galaxies and the most reliable morphologies.</td></tr>
 						    <tr><td colspan=2><a href="./data/gz2/zoo2MainSpecz.txt">Column description and format</a></td></tr>
@@ -420,7 +436,7 @@
 
 						<table class="downloads">
 							<tr>
-								<td colspan="2" class="banner">Table 6 - Main sample, photometric redshifts</td>
+								<td colspan="2" class="banner">Table 7 - Main sample, photometric redshifts</td>
 							</tr>
 						    <tr><td colspan=2>Table 6 gives classifications of the 42,462 galaxies in the main sample with photometric redshifts only. Debiased morphologies for this sample are slightly more uncertain than Table 5, since the data reduction requires a redshift to adjust the morphology for classification bias.</td></tr>
 						    <tr><td colspan=2><a href="./data/gz2/zoo2MainPhotoz.txt">Column description and format</a></td></tr>
@@ -438,7 +454,7 @@
 						<br />
 						<table class="downloads">
 							<tr>
-								<td colspan="2" class="banner">Table 7 - Stripe 82, normal-depth</td>
+								<td colspan="2" class="banner">Table 8 - Stripe 82, normal-depth</td>
 							</tr>
 						    <tr><td colspan=2>Table 7 gives classifications of the 17,787 galaxies classified in single-depth Stripe 82 images. The magnitude limit for Stripe 82 classifications (r&lt;17.7) is slightly deeper than the main samples. Some of these galaxies also appear in the main sample (Table 5).</td></tr>
 						    <tr><td colspan=2><a href="./data/gz2/zoo2Stripe82Normal.txt">Column description and format</a></td></tr>
@@ -456,7 +472,7 @@
 						<br />
 						<table class="downloads">
 							<tr>
-								<td colspan="2" class="banner">Table 8 - Stripe 82, coadded-depth (set 1)</td>
+								<td colspan="2" class="banner">Table 9 - Stripe 82, coadded-depth (set 1)</td>
 							</tr>
 						    <tr><td colspan=2>Table 8 gives classifications of the first set of 19,765 galaxies classified in the coadded (runs 106 and 206) Stripe 82 images. Coadded images are made from combining between 47&ndash;55 individual exposures, resulting in better detection of fainter features and improved seeing. This set of images had no adjustments made to its background, which resulted in coloured background noise for some galaxies.</td></tr>
 						    <tr><td colspan=2><a href="./data/gz2/zoo2Stripe82Coadd1.txt">Column description and format</a></td></tr>
@@ -474,7 +490,7 @@
 						<br />
 						<table class="downloads">
 							<tr>
-								<td colspan="2" class="banner">Table 9 - Stripe 82, coadded-depth (set 2)</td>
+								<td colspan="2" class="banner">Table 10 - Stripe 82, coadded-depth (set 2)</td>
 							</tr>
 						    <tr><td colspan=2>Table 9 gives classifications of the second set of 19,761 galaxies classified in the coadded (runs 106 and 206) Stripe 82 images. Coadded images are made from combining between 47&ndash;55 individual exposures, resulting in better detection of fainter features and improved seeing. This set of images applied a modest colour desaturation to de-emphasise background noise in the coadded data.</td></tr>
 						    <tr><td colspan=2><a href="./data/gz2/zoo2Stripe82Coadd2.txt">Column description and format</a></td></tr>
@@ -489,23 +505,6 @@
 							</tr>
 						</table>
 
-						<table class="downloads">
-							<tr>
-								<td colspan="2" class="banner">Table 10 - Normal-depth sample with new debiasing method</td>
-							</tr>
-						    <tr><td colspan=2>Table 10 contains all galaxies that were debiased with the method described in <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a>. Galaxies with spectroscopic redshifts classified in GZ2 (from the GZ2 normal, extra and stripe82 normal depth), and apparent r-band magnitudes less than 17.0 are included (239,695 galaxies in total). Please cite <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a> when using these classifications.</td></tr>
-						    <tr><td colspan=2><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.txt">Column description and format</a></td></tr>
-							<tr>
-								<td>CSV</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.csv.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.csv.gz</a></td>
-							</tr>
-							<tr>
-								<td>FITS</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.fits.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.fits.gz</a></td>
-							</tr>
-							<tr>	
-								<td>VOTable</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.vot.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.vot.gz</a></td>
-							</tr>
-						</table>
-						<br />
 
 						<br />
 						<table class="downloads">
