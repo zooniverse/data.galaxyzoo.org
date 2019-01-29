@@ -1,6 +1,6 @@
-Contact:    Brooke Simmons (bdsimmons@ucsd.edu) with any questions.
+Contact:    Brooke Simmons (b.simmons@lancaster.ac.uk) with any questions.
 
-Reference:  The project and data release are described in Simmons et al. (2016, submitted).
+Reference:  The project and data release are described in Simmons et al. (2017, MNRAS, 464, 4420).
             Please cite this paper if making use of any data in this table in publications.
 
 Description: Morphological classifications of galaxies from Galaxy Zoo: CANDELS
@@ -18,7 +18,7 @@ Description: Morphological classifications of galaxies from Galaxy Zoo: CANDELS
              of answers to each task, as well as the total raw and weighted classifier count
              for each subject. This combines for a total of 136 quantities for each subject,
              not including the subject ID or any other metadata. The structure of the data for
-             each task number NN with i = 0 to n−1 responses is as follows:
+             each task number NN with i = 0 to n-1 responses is as follows:
              
              t[NN]_[quest abbrev]_a[i]_[resp abbrev]_frac : the raw fraction of classifiers 
                 who gave this response.  quest abbrev and resp abbrev are abbreviated versions
