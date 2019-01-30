@@ -17,7 +17,14 @@ Then open the following in the browser to view the page:
 
 Other static file servers can also be run in the root directory if you prefer. 
 
-To deploy changes, use node v0.10.x, eg:
+Deploy changes with Docker:
+
+```
+docker-compose build
+docker-compose run dev npm run-script deploy
+```
+
+Alternatively, use node v9, eg:
 
 ```
 nvm use v0.10
