@@ -27,7 +27,7 @@ docker-compose run dev npm run-script deploy
 Alternatively, use node v9, eg:
 
 ```
-nvm use v0.10
+nvm use v9
 npm install
 npm run-script deploy
 ```
