@@ -1,6 +1,6 @@
-Contact:    Brooke Simmons (bdsimmons@ucsd.edu) with any questions.
+Contact:    Brooke Simmons (b.simmons@lancaster.ac.uk) with any questions.
 
-Reference:  The project and data release are described in Simmons et al. (2016, submitted).
+Reference:  The project and data release are described in Simmons et al. (2017, MNRAS, 464, 4420).
             Please cite this paper if making use of any data in this table in publications.
 
 Description: Depth-corrected morphological classifications of galaxies from Galaxy Zoo: CANDELS
@@ -8,7 +8,7 @@ Description: Depth-corrected morphological classifications of galaxies from Gala
              This table includes depth-corrected classifications for 10,648 galaxies
              with morphological measurements in multiple epochs (see Section 3.8 in Simmons+16).
 
-             The structure of the data for each task number NN with i = 0 to n−1 responses is as follows:
+             The structure of the data for each task number NN with i = 0 to n-1 responses is as follows:
              
              t[NN]_[quest abbrev]_a[i]_[resp abbrev]_deepcorr : the weighted fraction of classifiers 
                 who gave this response, corrected from the deep-exposure classification. 
