@@ -55,8 +55,12 @@
 		    			<a data-scroll-nav="16">Galaxy Zoo: Mergers</a>
 		    		</li>
                     <hr>
+						<li>
+		    			<a data-scroll-nav="17">Galaxy Builder</a>
+		    		</li>
+                    <hr>
 		    		<li>
-		    			<a data-scroll-nav="17">Data Visualizations</a>
+		    			<a data-scroll-nav="18">Data Visualizations</a>
 		    		</li>
 		    	</ul>
 		    </div>
@@ -71,7 +75,7 @@
 
 					<div data-scroll-index="0">
 						<h1>Galaxy Zoo 1 data release</h1>
-						<p>The original <a href="http://zoo1.galaxyzoo.org">Galaxy Zoo</a> project ran from July 2007 until February 2009. It was replaced by <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2</a>, <a href="http://hubble.galaxyzoo.org">Galaxy Zoo: Hubble</a>, and <a href="http://www.galaxyzoo.org">Galaxy Zoo: CANDELS</a>. In the original Galaxy Zoo project, volunteers classified images of <a href="http://www.sdss.org">Sloan Digital Sky Survey</a> galaxies as belonging to one of six categories - elliptical, clockwise spiral, anticlockwise spiral, edge-on , star/don't know, or merger. 
+						<p>The original <a href="http://zoo1.galaxyzoo.org">Galaxy Zoo</a> project ran from July 2007 until February 2009. It was replaced by <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2</a>, <a href="http://hubble.galaxyzoo.org">Galaxy Zoo: Hubble</a>, and <a href="http://www.galaxyzoo.org">Galaxy Zoo: CANDELS</a>. In the original Galaxy Zoo project, volunteers classified images of <a href="http://www.sdss.org">Sloan Digital Sky Survey</a> galaxies as belonging to one of six categories - elliptical, clockwise spiral, anticlockwise spiral, edge-on , star/don't know, or merger.
 					</div>
 
 					<div data-scroll-index="1">
@@ -94,7 +98,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table2.fits">GalaxyZoo1_DR_table2.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table2.vot.gz">GalaxyZoo1_DR_table2.vot.gz</a></td>
 							</tr>
 						    <tr><td colspan="2"><i>Note: the provided flags in Table 2 are there for the convenience of users who do not want to get into the details too much. These are based upon a vote fraction threshold of 0.8. However, there is a complication in the debiasing (described in <a href="http://adsabs.harvard.edu/abs/2009MNRAS.393.1324B">Bamford et al. 2009</a>). The classification bias depends on whether one uses the type likelihoods directly, or applies a threshold. The bias is worse if thresholds are used. We therefore applied bias corrections computed in consistent fashion. So, for the debiased type likelihoods we computed the bias correction based on the elliptical/spiral ratio using the likelihoods directly; for the type flags we debiased the raw type likelihoods using a correction based on the elliptical/spiral ratio determined after applying a 0.8 threshold, and then applied the same threshold to produce the flags. Therefore, the type flags do not correspond to simply applying a 0.8 threshold on the debiased type likelihoods, though for many galaxies these will agree.</i></tr></td>
@@ -116,7 +120,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table3.fits">GalaxyZoo1_DR_table3.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table3.vot.gz">GalaxyZoo1_DR_table3.vot.gz</a></td>
 							</tr>
 						</table>
@@ -137,12 +141,12 @@
 							<tr>
 								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table4.fits">GalaxyZoo1_DR_table4.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table4.vot.gz">GalaxyZoo1_DR_table4.vot.gz</a></td>
 							</tr>
 						</table>
 
-						<br />	
+						<br />
 
 						<table class="downloads">
 							<tr>
@@ -158,7 +162,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table5.fits">GalaxyZoo1_DR_table5.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table5.vot.gz">GalaxyZoo1_DR_table5.vot.gz</a></td>
 							</tr>
 						</table>
@@ -179,7 +183,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table6.fits">GalaxyZoo1_DR_table6.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://galaxy-zoo-1.s3.amazonaws.com/GalaxyZoo1_DR_table6.vot.gz">GalaxyZoo1_DR_table6.vot.gz</a></td>
 							</tr>
 						</table>
@@ -205,7 +209,7 @@
 							</tr>
 						</table>
 
-						<br />	
+						<br />
 
 						<h2>CASjobs</h2>
 						<p>These tables are also accessible via <a href="http://skyserver.sdss3.org/CasJobs/">CasJobs</a>. Their names are:</p>
@@ -225,7 +229,7 @@
 						<h2>AGN host galaxies</h2>
 						<p>This sample is presented in the Galaxy Zoo 1 paper on AGN host galaxies (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S" target="_blank">Schawinski et al., 2010, ApJ, 711, 284</a>). It is a volume-limited sample of galaxies (0.02 &lt; z &lt; 0.05, M<sub>z</sub> &lt; &ndash;19.5 AB) with emission line classifications, stellar masses, velocity dispersions and GZ1 morphological classifications. When using this sample, please cite Schawinski et al. (<a href="http://adsabs.harvard.edu/abs/2010ApJ...711..284S">2010</a>) and Lintott et al. (<a href="http://adsabs.harvard.edu/abs/2008MNRAS.389.1179L">2008</a>, <a href="http://adsabs.harvard.edu/abs/2011MNRAS.410..166L">2011</a>).</p>
 						<p>Download here: <a href="http://galaxy-zoo-1.s3.amazonaws.com/schawinski_GZ_2010_catalogue.fits.gz">schawinski_GZ_2010_catalogue.fits.gz</a></p>
-						
+
 						<table class="downloads">
 							<tr>
 							<tr><td>OBJID</td><td>SDSS DR7 object ID</tr>
@@ -362,7 +366,7 @@
 						sample of normal blue
 						spirals. The data
 						below is from Appendix
-						A, Tables 
+						A, Tables
 						A1 and A2 in Masters
 						et al. (2010) and
 						gives the red and blue
@@ -375,7 +379,7 @@
 							colspan="2"
 							class="banner">Red Spiral galaxies</td>
 							</tr>
-						  
+
 							<tr>
 								<td>ASCII</td><td><a href="./data/redspirals/RedSpiralsA1.txt">RedSpiralsA1.txt</a></td>
 							</tr>
@@ -388,7 +392,7 @@
 
 					<div data-scroll-index="7">
 						<h1>Galaxy Zoo 2</h1>
-                        <p> <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2 (GZ2)</a> was the successor project to Galaxy Zoo. GZ2 extends the original Galaxy Zoo classifications for a subsample of the brightest and largest galaxies in the Legacy release, measuring more detailed morphological features. This includes galactic bars, spiral arm and pitch angle, bulges, edge-on galaxies, relative ellipticities, and many others. Two debiased Galaxy Zoo tables are provided, described in <a href="http://arxiv.org/abs/1308.3496v2">Willett et al. (2013) </a> and <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a>: we strongly advise the use of the <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a> table, as this debiases the GZ2 quetion tree most consistently. 
+                        <p> <a href="http://zoo2.galaxyzoo.org">Galaxy Zoo 2 (GZ2)</a> was the successor project to Galaxy Zoo. GZ2 extends the original Galaxy Zoo classifications for a subsample of the brightest and largest galaxies in the Legacy release, measuring more detailed morphological features. This includes galactic bars, spiral arm and pitch angle, bulges, edge-on galaxies, relative ellipticities, and many others. Two debiased Galaxy Zoo tables are provided, described in <a href="http://arxiv.org/abs/1308.3496v2">Willett et al. (2013) </a> and <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a>: we strongly advise the use of the <a href="http://mnras.oxfordjournals.org/content/461/4/3663">Hart et al. (2016)</a> table, as this debiases the GZ2 quetion tree most consistently.
 					</div>
 
 
@@ -409,11 +413,11 @@
 							<tr>
 								<td>FITS</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.fits.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://gz2hart.s3.amazonaws.com/gz2_hart16.vot.gz">http://gz2hart.s3.amazonaws.com/gz2_hart16.vot.gz</a></td>
 							</tr>
 						</table>
-						<br />	
+						<br />
 
 						<table class="downloads">
 							<tr>
@@ -427,7 +431,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2MainSpecz.fits.gz">zoo2MainSpecz.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2MainSpecz.vot.gz">zoo2MainSpecz.vot.gz</a></td>
 							</tr>
 						</table>
@@ -446,7 +450,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2MainPhotoz.fits.gz">zoo2MainPhotoz.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2MainPhotoz.vot.gz">zoo2MainPhotoz.vot.gz</a></td>
 							</tr>
 						</table>
@@ -464,7 +468,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2Stripe82Normal.fits.gz">zoo2Stripe82Normal.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2Stripe82Normal.vot.gz">zoo2Stripe82Normal.vot.gz</a></td>
 							</tr>
 						</table>
@@ -482,7 +486,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2Stripe82Coadd1.fits.gz">zoo2Stripe82Coadd1.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2Stripe82Coadd1.vot.gz">zoo2Stripe82Coadd1.vot.gz</a></td>
 							</tr>
 						</table>
@@ -500,7 +504,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2Stripe82Coadd2.fits.gz">zoo2Stripe82Coadd2.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/zoo2Stripe82Coadd2.vot.gz">zoo2Stripe82Coadd2.vot.gz</a></td>
 							</tr>
 						</table>
@@ -519,16 +523,16 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/gz2sample.fits.gz">gz2sample.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-2/gz2sample.vot.gz">gz2sample.vot.gz</a></td>
 							</tr>
 						</table>
 
-						<br />	
+						<br />
 
 
 
-						
+
                         <p> The code used to reduce GZ2 is available on GitHub &mdash; please take a look either at its <a href="http://willettk.github.io/galaxyzoo2/">webpage</a> or fork it from the <a href="https://github.com/willettk/galaxyzoo2">repository</a> if you're interested in the details.
 						<h3>CASjobs</h3>
 						<p>The GZ2 catalog is also accessible via <a href="http://skyserver.sdss3.org/CasJobs/">CasJobs</a> in Data Release 10. The table names in CasJobs are:</p>
@@ -543,7 +547,7 @@
 						</p>
 
 						<h3>SDSS Skyserver</h3>
-						<p>For any object in SDSS DR10, you can access its Galaxy Zoo or Galaxy Zoo 2 classifications (if present) by using the <a href="http://skyserver.sdss3.org/public/en/tools/explore/">"Explore"</a> tool. Just click the "Galaxy Zoo" link under "Imaging Summary" in the left-hand sidebar (<a href="http://skyserver.sdss3.org/public/en/tools/explore/galaxyzoo.aspx?id=1237668296598749280&spec=2947691243863304192&apid=apogee.n.s.s3.4128.2M13102744+1826172">example here</a>). 
+						<p>For any object in SDSS DR10, you can access its Galaxy Zoo or Galaxy Zoo 2 classifications (if present) by using the <a href="http://skyserver.sdss3.org/public/en/tools/explore/">"Explore"</a> tool. Just click the "Galaxy Zoo" link under "Imaging Summary" in the left-hand sidebar (<a href="http://skyserver.sdss3.org/public/en/tools/explore/galaxyzoo.aspx?id=1237668296598749280&spec=2947691243863304192&apid=apogee.n.s.s3.4128.2M13102744+1826172">example here</a>).
 
 					</div>
 
@@ -561,7 +565,7 @@
 							<tr>
 								<td>FITS</td><td><a href="./data/bars/hoyle_barlengths.fits">barlengths.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="./data/bars/hoyle_barlengths.vot">barlengths.vot</a></td>
 							</tr>
 						</table>
@@ -574,7 +578,7 @@
 						<p>Early Galaxy Zoo 2 classifications were used to identify a sample of 362 spheroidal galaxies with prominent dust lanes (DLSGs), ranging from redshifts of z=0.01 to 0.07. Catalogues of the galaxy properties, along with multi-wavelength coverage from radio through ultraviolet, are available here.</p>
 
                         <p>All tables below are in ASCII format.</p>
-                        
+
                         <ul>
                             <li><a href="./data/dustlanes/Basic_Information.txt">Basic information</a>
                             <li><a href="./data/dustlanes/FIRST_Radio_Survey.txt">Radio-wavelength data from FIRST</a>
@@ -585,7 +589,7 @@
                         </ul>
 
                         <p>Please cite the DLSG (<a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1107.5306">Kaviraj et al. 2012</a>; <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1107.5310">Shabala et al. 2012</a>; <a href="http://adsabs.harvard.edu/doi/10.1093/mnras/stt1629">Kaviraj et al. 2013</a>) and Galaxy Zoo 2 (<a href="http://arxiv.org/abs/1308.3496v2">Willett et al. 2013</a>) publications if using this data.</p>
-                        
+
 						<br />
 					</div>
 
@@ -611,7 +615,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_main.fits.gz">gz_hubble_main.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_main.vot.gz">gz_hubble_main.vot.gz</a></td>
 							</tr>
 						</table>
@@ -630,7 +634,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_faded.fits.gz">gz_hubble_faded.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_faded.vot.gz">gz_hubble_faded.vot.gz</a></td>
 							</tr>
 						</table>
@@ -649,7 +653,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_recoloured.fits.gz">gz_hubble_recoloured.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_recoloured.vot.gz">gz_hubble_recoloured.vot.gz</a></td>
 							</tr>
 						</table>
@@ -668,7 +672,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_goods_shallow.fits.gz">gz_hubble_goods_shallow.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_goods_shallow.vot.gz">gz_hubble_goods_shallow.vot.gz</a></td>
 							</tr>
 						</table>
@@ -687,7 +691,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_sdss_single.fits.gz">gz_hubble_sdss_single.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_sdss_single.vot.gz">gz_hubble_sdss_single.vot.gz</a></td>
 							</tr>
 						</table>
@@ -706,7 +710,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_sdss_coadd.fits.gz">gz_hubble_sdss_coadd.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_sdss_coadd.vot.gz">gz_hubble_sdss_coadd.vot.gz</a></td>
 							</tr>
 						</table>
@@ -725,7 +729,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_simulated_agn.fits.gz">gz_hubble_simulated_agn.fits.gz</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-hubble/gz_hubble_simulated_agn.vot.gz">gz_hubble_simulated_agn.vot.gz</a></td>
 							</tr>
 						</table>
@@ -800,7 +804,7 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-candels/gz_candels_table_2_main_release.fits">gz_candels_table_2_main_release.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-candels/gz_candels_table_2_main_release.vot">gz_candels_table_2_main_release.vot</a></td>
 							</tr>
 							<tr>
@@ -814,10 +818,10 @@
 							<tr>
 								<td>FITS</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-candels/gz_candels_table_4_depth_corr.fits">gz_candels_table_4_depth_corr.fits</a></td>
 							</tr>
-							<tr>	
+							<tr>
 								<td>VOTable</td><td><a href="http://zooniverse-data.s3.amazonaws.com/galaxy-zoo-candels/gz_candels_table_4_depth_corr.vot">gz_candels_table_4_depth_corr.vot</a></td>
 							</tr>
-							
+
 						</table>
 					</div>
 
@@ -827,8 +831,14 @@
 					</div>
 
 					<div data-scroll-index="17">
+						<h1>Galaxy Builder</h1>
+						<p><a href="https://www.zooniverse.org/projects/tingard/galaxy-builder/" target="_blank">Galaxy Builder</a> made use of citizen science to create disc-bulge-bar-spiral photometric models of 198 spiral galaxies, selected using GZ2 and the NASA-Sloan Atlas. The project is further described in <a href="https://arxiv.org/abs/2006.10450" target="_blank">Lingard et al. (2020)</a>.</p>
+						<p>The Galaxy Builder catalog can be downloaded <a href="http://zooniverse-data.s3.amazonaws.com/galaxy-builder/galaxy-builder-catalog.csv">as a CSV</a>.
+					</div>
+
+					<div data-scroll-index="18">
 						<h1>Data visualizations</h1>
-						<p>For an interactive visualization of the decision trees for each of the Galaxy Zoo projects, please look at this tool created by Coleman Krawczyk (University of Portsmouth). 
+						<p>For an interactive visualization of the decision trees for each of the Galaxy Zoo projects, please look at this tool created by Coleman Krawczyk (University of Portsmouth).
                         <p><a href="gz_trees/gz_trees.html">Galaxy Zoo Decision Trees</a>
 					</div>
 				</div>
@@ -849,7 +859,7 @@
 		  ga('create', 'UA-1224199-21', 'galaxyzoo.org');
 		  ga('send', 'pageview');
 		</script>
-		
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="vendor/scripts/zooniverse.js" type="text/javascript"></script>
 		<script src="scripts/application.js" type="text/javascript"></script>
