@@ -12,5 +12,9 @@
   "scripts": {
     "start": "cake serve",
     "deploy": "cake compile && publisssh ./public zooniverse-static/data.galaxyzoo.org"
+  },
+  "engines": {
+    "node": ">=15",
+    "npm": ">=7"
   }
 }
