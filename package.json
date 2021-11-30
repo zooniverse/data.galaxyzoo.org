@@ -10,8 +10,9 @@
     "stylus": "^0.55.0"
   },
   "scripts": {
+    "build": "cake compile",
     "start": "cake serve",
-    "deploy": "cake compile && publisssh ./public zooniverse-static/data.galaxyzoo.org"
+    "deploy": "npm run build && publisssh ./public zooniverse-static/data.galaxyzoo.org"
   },
   "engines": {
     "node": ">=15",
