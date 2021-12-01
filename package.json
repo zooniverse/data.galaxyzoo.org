@@ -4,13 +4,18 @@
   "private": true,
   "dependencies": {
     "coffee-script": "~1.9.0",
-    "stylus": "~0.49.3",
-    "nib": "~1.0.4",
+    "nib": "^1.1.2",
     "node-static": "~0.7.2",
-    "publisssh": "~1.0.0"
+    "publisssh": "^0.0.5",
+    "stylus": "^0.55.0"
   },
   "scripts": {
+    "build": "cake compile",
     "start": "cake serve",
-    "deploy": "cake compile && publisssh ./public zooniverse-static/data.galaxyzoo.org"
+    "deploy": "npm run build && publisssh ./public zooniverse-static/data.galaxyzoo.org"
+  },
+  "engines": {
+    "node": ">=15",
+    "npm": ">=7"
   }
 }
