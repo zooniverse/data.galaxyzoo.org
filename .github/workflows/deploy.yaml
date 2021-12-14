@@ -1,0 +1,40 @@
+name: Deploy data.galaxyzoo.org
+
+on:
+  # Run this workflow on merge (push) to master
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build data.galaxyzoo.org
+    uses: zooniverse/ci-cd/.github/workflows/npm_build.yml@main
+    with:
+      commit_id: ${{ github.sha }}
+      node_version: 9
+      script: 'build'
+      output: 'public'
+
+  deploy:
+    name: Deploy data.galaxyzoo.org
+    uses: zooniverse/ci-cd/.github/workflows/deploy_static.yml@main
+    needs: build
+    with:
+      source: 'public'
+      target: 'zooniverse-static/datatest.galaxyzoo.org'
+    secrets:
+      creds: ${{ secrets.AZURE_STATIC_SITES }}
+
+  slack_notification:
+    name: Send Slack notification
+    uses: zooniverse/ci-cd/.github/workflows/slack_notification.yml@main
+    needs: deploy
+    if: always()
+    with:
+      deploy_url: 'https://data.galaxyzoo.org'
+      job_name: Deploy data.galaxyzoo.org / build
+      status: ${{ needs.deploy.result }}
+      title: 'data.galaxyzoo.org deploy complete'
+    secrets:
+      slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
