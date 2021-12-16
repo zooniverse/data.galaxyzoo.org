@@ -41,7 +41,7 @@ jobs:
     if: always()
     with:
       commit_id: ${{ github.sha }}
-      job_name: Deploy data.galaxyzoo.org / build
+      job_name: Deploy data.galaxyzoo.org / deploy
       status: ${{ needs.deploy.result }}
       title: 'data.galaxyzoo.org deploy complete'
       title_link: 'https://data.galaxyzoo.org'
