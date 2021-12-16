@@ -14,7 +14,7 @@ jobs:
 
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.creds }}
+        creds: ${{ secrets.AZURE_STATIC_SITES }}
 
     - name: Upload to blob storage
       id: upload
