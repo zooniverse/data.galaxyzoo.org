@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build data.galaxyzoo.org
-    uses: zooniverse/ci-cd/.github/workflows/npm_build.yml@main
+    uses: zooniverse/ci-cd/.github/workflows/npm_build.yaml@main
     with:
       commit_id: ${{ github.sha }}
       node_version: 9
@@ -18,7 +18,7 @@ jobs:
 
   deploy:
     name: Deploy data.galaxyzoo.org
-    uses: zooniverse/ci-cd/.github/workflows/deploy_static.yml@main
+    uses: zooniverse/ci-cd/.github/workflows/deploy_static.yaml@main
     needs: build
     with:
       source: 'public'
@@ -28,7 +28,7 @@ jobs:
 
   slack_notification:
     name: Send Slack notification
-    uses: zooniverse/ci-cd/.github/workflows/slack_notification.yml@main
+    uses: zooniverse/ci-cd/.github/workflows/slack_notification.yaml@main
     needs: deploy
     if: always()
     with:
