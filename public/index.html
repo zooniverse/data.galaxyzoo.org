@@ -50,28 +50,38 @@
 		    				<li><a data-scroll-nav="15">Full Catalog</a></li>
 		    			</ul>
 		    		</li>
+					<li>
+		    			<a data-scroll-nav="16">Galaxy Zoo DECaLS</a>
+						<ul class="sub-nav">
+		    				<li><a data-scroll-nav="17">Catalog, Images, Models</a></li>
+		    			</ul>
+		    		</li>
                     <hr>
 		    		<li>
-		    			<a data-scroll-nav="16">Galaxy Zoo: Mergers</a>
+		    			<a data-scroll-nav="18">Galaxy Zoo: Mergers</a>
 		    		</li>
                     <hr>
 						<li>
-		    			<a data-scroll-nav="17">Galaxy Builder</a>
+		    			<a data-scroll-nav="19">Galaxy Builder</a>
 		    		</li>
                     <hr>
 		    		<li>
-		    			<a data-scroll-nav="18">Data Visualizations</a>
+		    			<a data-scroll-nav="20">Data Visualizations</a>
 		    		</li>
 		    	</ul>
 		    </div>
 
 		    <!-- I'm lazy. -->
 		    <!-- Me too. -->
+			<!-- Same. -->
 		    <div class="placeholder">&nbsp;</div>
     	</div>
 
     	<div class="column wide">
 				<div class="content">
+					
+					<br>
+					<i>Use the navigation bar on the left to find each data release.</i>
 
 					<div data-scroll-index="0">
 						<h1>Galaxy Zoo 1 data release</h1>
@@ -825,12 +835,58 @@
 						</table>
 					</div>
 
+
 					<div data-scroll-index="16">
+						<h1>Galaxy Zoo DECaLS</h1>
+						<p>Galaxy Zoo DECaLS is currently classifying the morphology of galaxies in images from the <a href="https://www.legacysurvey.org/decamls/">Dark Energy Camera Legacy Survey (DECaLS)</a>.
+							DECaLS images were taken with the Dark Energy Camera (DECam) on the Blanco 4m telescope, located at the Cerro Tololo Inter-American Observatory.
+							Deeper DECaLS images (r=23.6 versus r=22.2 from SDSS) reveal spiral arms, weak bars, and tidal features not previously visible in SDSS imaging.
+							We have released classifications for 314,000 galaxies to date.
+						</p>
+						<p>
+							For the first time, we also include automatic morphology predictions made using deep learning models. These models are trained on volunteer answers and predict posteriors for what a typical volunteer might say.
+							When tested on galaxies where the volunteers are confident, they are 99% accurate on every question.
+							<a href="https://github.com/mwalmsley/zoobot">Code</a> and <a href="https://zoobot.readthedocs.io">extensive documentation</a> are available if you would like to extend these models or apply them to new problems.
+						</p>
+
+						<p>
+							<a href="https://ui.adsabs.harvard.edu/abs/10.1093%2Fmnras%2Fstab2093/abstract">Walmsley et al. (2021)</a>
+							(available free from the <a href="https://doi.org/10.1093/mnras/stab2093">MNRAS journal</a>) 
+							describes the project and current data release. 
+							Please cite this paper if using any data from Galaxy Zoo DECaLS.
+						</p>
+						
+						<div data-scroll-index="17">
+							<h3>Catalogue, Images, Models</h3>
+
+							<p>
+								The GZ DECaLS data is available via <a href="https://doi.org/10.5281/zenodo.4196266">Zenodo</a>. This includes:
+							</p>
+
+							<p>
+								
+								<ul>
+									<li>Morphology classifications from, typically, 5 to 40 volunteers per galaxy (see <a href="https://doi.org/10.1093/mnras/stab2093">the paper</a>)</li>
+									<li>Morphology classifications from deep learning models, trained by those volunteers</li>
+									<li>The images uploaded to Galaxy Zoo (100GB)</li>
+								</ul>
+							</p>
+							
+							<p>
+								Trained model weights, and code to reproduce those models, are available via the <a href="https://github.com/mwalmsley/zoobot">Zoobot</a> GitHub repository.
+							</p>
+							
+						</div>
+
+					</div>
+
+
+					<div data-scroll-index="18">
 						<h1>Galaxy Zoo: Mergers</h1>
                         <p>See <a href="mergers.html">this page</a> for full details and data for the separate <a href="http://mergers.galaxyzoo.org">Galaxy Zoo: Mergers</a> project.
 					</div>
 
-					<div data-scroll-index="17">
+					<div data-scroll-index="19">
 						<h1>Galaxy Builder</h1>
 						<p><a href="https://www.zooniverse.org/projects/tingard/galaxy-builder/" target="_blank">Galaxy Builder</a> made use of citizen science to create disc-bulge-bar-spiral photometric models of 198 spiral galaxies, selected using GZ2 and the NASA-Sloan Atlas. The project is further described in <a href="https://arxiv.org/abs/2006.10450" target="_blank">Lingard et al. (2020)</a>.</p>
 						<table class="downloads">
@@ -844,7 +900,7 @@
 						</table>
 					</div>
 
-					<div data-scroll-index="18">
+					<div data-scroll-index="20">
 						<h1>Data visualizations</h1>
 						<p>For an interactive visualization of the decision trees for each of the Galaxy Zoo projects, please look at this tool created by Coleman Krawczyk (University of Portsmouth).
                         <p><a href="gz_trees/gz_trees.html">Galaxy Zoo Decision Trees</a>
