@@ -7,22 +7,13 @@ on:
       - master
 
 jobs:
-  build:
-    name: Build data.galaxyzoo.org
-    uses: zooniverse/ci-cd/.github/workflows/npm_build.yaml@main
-    with:
-      commit_id: ${{ github.sha }}
-      node_version: 9
-      script: 'build'
-      output: 'public'
-
   deploy:
     name: Deploy data.galaxyzoo.org
     uses: zooniverse/ci-cd/.github/workflows/deploy_static.yaml@main
-    needs: build
     with:
       source: 'public'
       target: 'zooniverse-static/data.galaxyzoo.org'
+      max_age: 600
     secrets:
       creds: ${{ secrets.AZURE_STATIC_SITES }}
 
