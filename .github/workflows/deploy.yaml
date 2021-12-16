@@ -8,14 +8,31 @@ on:
 
 jobs:
   deploy:
-    name: Deploy data.galaxyzoo.org
-    uses: zooniverse/ci-cd/.github/workflows/deploy_static.yaml@main
-    with:
-      source: 'public'
-      target: 'zooniverse-static/data.galaxyzoo.org'
-      max_age: 600
-    secrets:
-      creds: ${{ secrets.AZURE_STATIC_SITES }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.creds }}
+
+    - name: Upload to blob storage
+      id: upload
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az storage blob upload \
+            --account-name zooniversestatic \
+            --content-cache-control 'public, max-age=60' \
+            --container-name '$web' \
+            --name 'data.galaxyzoo.org/index.html' \
+            --file './index.html'
+          rm ./index.html
+          az storage blob upload-batch \
+            --account-name zooniversestatic \
+            --content-cache-control 'public, immutable, max-age=600' \
+            --destination '$web/data.galaxyzoo.org' \
+            --source ./
 
   slack_notification:
     name: Send Slack notification
