@@ -32,9 +32,10 @@ jobs:
     needs: deploy
     if: always()
     with:
+      commit_id: ${{ github.sha }}
       job_name: Deploy data.galaxyzoo.org / build
       status: ${{ needs.deploy.result }}
-      title_link: 'https://data.galaxyzoo.org'
       title: 'data.galaxyzoo.org deploy complete'
+      title_link: 'https://data.galaxyzoo.org'
     secrets:
       slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
