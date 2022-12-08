@@ -24,6 +24,7 @@ jobs:
           az storage blob upload \
             --account-name zooniversestatic \
             --content-cache-control 'public, max-age=60' \
+            --overwrite \
             --container-name '$web' \
             --name 'data.galaxyzoo.org/index.html' \
             --file './public/index.html'
@@ -31,6 +32,7 @@ jobs:
           az storage blob upload-batch \
             --account-name zooniversestatic \
             --content-cache-control 'public, immutable, max-age=600' \
+            --overwrite \
             --destination '$web/data.galaxyzoo.org' \
             --source ./public
 
