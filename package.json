@@ -7,7 +7,7 @@
     "nib": "^1.1.2",
     "node-static": "~0.7.2",
     "publisssh": "^0.0.5",
-    "stylus": "^0.55.0"
+    "stylus": "^0.59.0"
   },
   "scripts": {
     "build": "cake compile",
