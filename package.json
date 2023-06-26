@@ -2,17 +2,11 @@
   "name": "data.galaxyzoo.org",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "coffee-script": "~1.9.0",
-    "nib": "^1.1.2",
-    "node-static": "~0.7.2",
-    "publisssh": "^0.0.5",
-    "stylus": "^0.59.0"
+  "devDependencies": {
+    "node-static": "~0.7.2"
   },
   "scripts": {
-    "build": "cake compile",
-    "start": "cake serve",
-    "deploy": "npm run build && publisssh ./public zooniverse-static/data.galaxyzoo.org"
+    "start": "static ./public"
   },
   "engines": {
     "node": ">=15",
