@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "node-static": "~0.7.2"
+    "serve": "~14.2.0"
   },
   "scripts": {
-    "start": "static ./public"
+    "start": "serve ./public"
   },
   "engines": {
     "node": ">=15",

@@ -8,7 +8,7 @@ To run locally, first make sure the repo files are updated. Then run the command
 
 Then open the following in the browser to view the page:
 
-    http://localhost:8080
+    http://localhost:3000
  
 
 Deploy changes with GitHub Actions:
