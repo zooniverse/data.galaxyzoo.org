@@ -57,17 +57,23 @@
 		    				<li><a href="#section-17">Catalog, Images, Models</a></li>
 		    			</ul>
 		    		</li>
+					<li>
+		    			<a href="#section-18">Galaxy Zoo DESI</a>
+						<ul class="sub-nav">
+		    				<li><a href="#section-19">Catalog, Models</a></li>
+		    			</ul>
+		    		</li>
                     <hr>
 		    		<li>
-		    			<a href="#section-18">Galaxy Zoo: Mergers</a>
+		    			<a href="#section-20">Galaxy Zoo: Mergers</a>
 		    		</li>
                     <hr>
 						<li>
-		    			<a href="#section-19">Galaxy Builder</a>
+		    			<a href="#section-21">Galaxy Builder</a>
 		    		</li>
                     <hr>
 		    		<li>
-		    			<a href="#section-20">Data Visualizations</a>
+		    			<a href="#section-22">Data Visualizations</a>
 		    		</li>
 		    	</ul>
 		    </div>
@@ -846,14 +852,30 @@
 
 					<div id="section-16">
 						<h1>Galaxy Zoo DECaLS</h1>
-						<p>Galaxy Zoo DECaLS is currently classifying the morphology of galaxies in images from the <a href="https://www.legacysurvey.org/decamls/">Dark Energy Camera Legacy Survey (DECaLS)</a>.
+
+						<p>
+							<b>
+								Galaxy Zoo DECaLS has now been superceded by Galaxy Zoo DESI.
+							</b>
+							GZ DESI extends the Galaxy Zoo DECaLSmorphological classifications to the full DESI footprint (instead of just the intersection of SDSS and DECaLS),
+							increasing sky coverage by a factor of four.
+							<br>
+							<br>
+							<b>
+								New research projects should use the Galaxy Zoo DESI catalogues, available in the next section.
+							</b>
+							The text below is left for reference.
+							<br>
+						</p>
+
+						<p>Galaxy Zoo DECaLS classified the morphology of galaxies in images from the <a href="https://www.legacysurvey.org/decamls/">Dark Energy Camera Legacy Survey (DECaLS)</a>.
 							DECaLS images were taken with the Dark Energy Camera (DECam) on the Blanco 4m telescope, located at the Cerro Tololo Inter-American Observatory.
 							Deeper DECaLS images (r=23.6 versus r=22.2 from SDSS) reveal spiral arms, weak bars, and tidal features not previously visible in SDSS imaging.
-							We have released classifications for 314,000 galaxies to date.
+							We released classifications for 314,000 galaxies.
 						</p>
 						<p>
-							For the first time, we also include automatic morphology predictions made using deep learning models. These models are trained on volunteer answers and predict posteriors for what a typical volunteer might say.
-							When tested on galaxies where the volunteers are confident, they are 99% accurate on every question.
+							For the first time, we included automatic morphology predictions made using deep learning models. These models are trained on volunteer answers and predict posteriors for what a typical volunteer might say.
+							When tested on galaxies where the volunteers are confident, they were 99% accurate on every question.
 							<a href="https://github.com/mwalmsley/zoobot">Code</a> and <a href="https://zoobot.readthedocs.io">extensive documentation</a> are available if you would like to extend these models or apply them to new problems.
 						</p>
 
@@ -881,20 +903,68 @@
 							</p>
 							
 							<p>
-								Trained model weights, and code to reproduce those models, are available via the <a href="https://github.com/mwalmsley/zoobot">Zoobot</a> GitHub repository.
+								The DECaLS models, and code used to create them, were previously available via the <a href="https://github.com/mwalmsley/zoobot">Zoobot</a> GitHub repository.
+								Our models have continued to advance since GZ DECaLS was published, and are now significantly more accurate at classifying galaxy morphology.
+								<a href="https://github.com/mwalmsley/zoobot">Zoobot</a> now hosts our latest models.
 							</p>
 							
 						</div>
 
 					</div>
 
-
+					
 					<div id="section-18">
+						<h1>Galaxy Zoo DESI</h1>
+						<p>Galaxy Zoo DESI includes detailed morphology measurements for 8.67 million galaxies in the DESI Legacy Imaging Surveys (DECaLS, MzLS, and BASS, plus DES). 
+							These are automated measurements made by deep learning models trained on Galaxy Zoo volunteer votes. 
+							Extending our morphology measurements outside of the previously-released DECaLS/SDSS intersection increases our sky coverage by a factor of 4 (5,000 to 19,000 deg$^2$) and allows for full overlap with complementary surveys including ALFALFA and MaNGA.
+							<br>
+							Our models typically predict the fraction of volunteers selecting each answer to within 5-10\% for every answer to every GZ question. 
+							The models are trained on newly-collected votes for DESI-LS DR8 images as well as historical votes from GZ DECaLS.
+							<a href="https://github.com/mwalmsley/zoobot">Code</a> and <a href="https://zoobot.readthedocs.io">extensive documentation</a> are available if you would like to extend these models or apply them to new problems. 
+						</p>
+						<p>
+							<a href="https://ui.adsabs.harvard.edu/abs/10.1093%2Fmnras%2FTODO/abstract">Walmsley et al. (2023)</a>
+							(available free from the <a href="https://doi.org/10.1093/mnras/TODO">MNRAS journal</a>) 
+							describes the project and current data release. 
+							Please cite this paper if using any data from Galaxy Zoo DESI.
+						</p>
+						
+						<div id="section-19">
+							<h3>Catalogue, Models</h3>
+
+							<p>
+								The GZ DESI data is available via <a href="https://doi.org/10.5281/zenodo.4196266">Zenodo</a>. 
+								We provide two versions of our morphology catalogue; a "friendly" version (600MB) with just the morphology measurements,
+								and an "advanced" version (8GB) which also includes 90% confidence intervals and a measure of question relevance.
+								See the <a href="https://doi.org/10.5281/zenodo.4196266">Zenodo page</a> for more details.
+							</p>
+							<p>
+								The morphology catalogue is also available from NOIRLab's <a href="TODO">Astro Data Lab</a> and from <a href="TODO">Vizier</a>.
+								Both services allow you to cross-match our catalogue against your own catalogues.
+								<a href="TODO">Astro Data Lab</a> also hosts data from DESI itself, allowing you to query DESI spectra and GZ DESI morphology measurements <a href="https://datalab.noirlab.edu/tools.php">with the same tools.</a> 
+							</p>
+							<p>
+								The sheer size of the images prepared for our volunteers and models (approx. 1TB) prevents us from including them in this data release.
+								The original data is available via the Legacy Survey FITS cutout service (select Data Release 8 for an exact replication).
+								We may be able to arrange sharing the prepared images on a case-by-case basis; please reach out if this is crucial to your research.
+							</p>
+							
+							<p>
+								Trained model weights, and code to reproduce those models, are available via the <a href="https://github.com/mwalmsley/zoobot">Zoobot</a> GitHub repository.
+								<b>Zoobot includes our latest models and is designed to be easily finetuned to new surveys and new morphology-related tasks.</b>
+							</p>
+						
+						</div>
+
+					</div>
+
+					<div id="section-20">
 						<h1>Galaxy Zoo: Mergers</h1>
                         <p>See <a href="mergers.html">this page</a> for full details and data for the separate <a href="http://mergers.galaxyzoo.org">Galaxy Zoo: Mergers</a> project.
 					</div>
 
-					<div id="section-19">
+					<div id="section-21">
 						<h1>Galaxy Builder</h1>
 						<p><a href="https://www.zooniverse.org/projects/tingard/galaxy-builder/" target="_blank">Galaxy Builder</a> made use of citizen science to create disc-bulge-bar-spiral photometric models of 198 spiral galaxies, selected using GZ2 and the NASA-Sloan Atlas. The project is further described in <a href="https://arxiv.org/abs/2006.10450" target="_blank">Lingard et al. (2020)</a>.</p>
 						<table class="downloads">
@@ -908,7 +978,7 @@
 						</table>
 					</div>
 
-					<div id="section-20">
+					<div id="section-22">
 						<h1>Data visualizations</h1>
 						<p>For an interactive visualization of the decision trees for each of the Galaxy Zoo projects, please look at this tool created by Coleman Krawczyk (University of Portsmouth).
                         <p><a href="gz_trees/gz_trees.html">Galaxy Zoo Decision Trees</a>
