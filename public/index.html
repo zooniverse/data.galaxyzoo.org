@@ -52,28 +52,34 @@
 		    			</ul>
 		    		</li>
 					<li>
-		    			<a href="#section-16">Galaxy Zoo DECaLS</a>
-						<ul class="sub-nav">
-		    				<li><a href="#section-17">Catalog, Images, Models</a></li>
+		    			<a href="#section-16">Galaxy Zoo: UKIDSS</a>
+		    			<ul class="sub-nav">
+		    				<li><a href="#section-17">Full Catalog</a></li>
 		    			</ul>
 		    		</li>
 					<li>
-		    			<a href="#section-18">Galaxy Zoo DESI (8.7M)</a>
+		    			<a href="#section-18">Galaxy Zoo DECaLS</a>
 						<ul class="sub-nav">
-		    				<li><a href="#section-19">Catalog, Models</a></li>
+		    				<li><a href="#section-19">Catalog, Images, Models</a></li>
+		    			</ul>
+		    		</li>
+					<li>
+		    			<a href="#section-20">Galaxy Zoo DESI (8.7M)</a>
+						<ul class="sub-nav">
+		    				<li><a href="#section-21">Catalog, Models</a></li>
 		    			</ul>
 		    		</li>
                     <hr>
 		    		<li>
-		    			<a href="#section-20">Galaxy Zoo: Mergers</a>
+		    			<a href="#section-22">Galaxy Zoo: Mergers</a>
 		    		</li>
                     <hr>
 						<li>
-		    			<a href="#section-21">Galaxy Builder</a>
+		    			<a href="#section-23">Galaxy Builder</a>
 		    		</li>
                     <hr>
 		    		<li>
-		    			<a href="#section-22">Data Visualizations</a>
+		    			<a href="#section-24">Data Visualizations</a>
 		    		</li>
 		    	</ul>
 		    </div>
@@ -851,6 +857,35 @@
 
 
 					<div id="section-16">
+						<h1>Galaxy Zoo: UKIDSS</h1>
+
+						<p>
+
+							<a href="https://iopscience.iop.org/article/10.3847/2515-5172/ad6f10">Galaxy Zoo UKIDSS</a> contains morphology measurements for 71,052 galaxies with YJK (1-2.4 μm) imaging from the United Kingdom Infrared Telescope Infrared Deep Sky Survey (<a href="https://en.wikipedia.org/wiki/UKIRT_Infrared_Deep_Sky_Survey">UKIDSS</a>).
+							Galaxies were selected out of the Galaxy Zoo 2 (<a href="https://data.galaxyzoo.org/#section-7">GZ2</a>) sample, so also have classifications based on gri (0.48-0.76 μm) imaging from the Sloan Digital Sky Survey. An identical classification tree, and vote weighting/aggregation was applied to both UKIDSS and GZ2 classifications enabling direct comparisons.
+
+							<a href="https://iopscience.iop.org/article/10.3847/2515-5172/ad6f10">Masters et al (2014)</a> is an open access RNAAS publication which briefly describes this phase of Galaxy Zoo, which ran from 2013-2014 on the Galaxy Zoo site. Please cite this, and Galloway 2018 (PhD Thesis) if you use these data.
+						
+						</p>
+
+
+			
+						
+					</div>
+
+					<div id="section-17">
+						<h2>Catalog, Images</h2>
+						
+						<p>The GZ UKIDSS label catalog and images are available on <a href="https://www.TODO/">Zenodo</a>.</p>
+
+						<p>
+							The catalog contains volunteer vote counts (e.g. smooth-or-featured_smooth) and fractions (e.g. smooth-or-featured_smooth_fraction). The CSV and Parquet catalog files contain identical data, just saved in different formats. Each row also includes the subfolder and filename columns, to locate the corresponding image in the tar archive below.
+						</p>
+						<p>
+							images.tar.xz is a compressed tar archive file. You can unpack it with any GUI (e.g. File Explorer) or with command-line utilities (e.g. tar xf images.tar.xz). It contains 70,845 images, one for each row in the catalog (207 images were not recoverable from our database). The images are in jpg format and exactly as shown to volunteers during GZ UKIDSS.
+						</p>
+
+					<div id="section-18">
 						<h1>Galaxy Zoo DECaLS</h1>
 
 						<p>
@@ -886,7 +921,7 @@
 							Please cite this paper if using any data from Galaxy Zoo DECaLS.
 						</p>
 						
-						<div id="section-17">
+						<div id="section-19">
 							<h3>Catalogue, Images, Models</h3>
 
 							<p>
@@ -913,7 +948,7 @@
 					</div>
 
 					
-					<div id="section-18">
+					<div id="section-20">
 						<h1>Galaxy Zoo DESI (8.7M)</h1>
 						<p>Galaxy Zoo DESI includes detailed morphology measurements for 8.67 million galaxies in the DESI Legacy Imaging Surveys (DECaLS, MzLS, and BASS, plus DES). 
 							These are automated measurements made by deep learning models trained on Galaxy Zoo volunteer votes. 
@@ -930,7 +965,7 @@
 							Please cite this paper if using any data from Galaxy Zoo DESI.
 						</p>
 						
-						<div id="section-19">
+						<div id="section-21">
 							<h3>Catalogue, Models</h3>
 
 							<p>
@@ -959,12 +994,12 @@
 
 					</div>
 
-					<div id="section-20">
+					<div id="section-22">
 						<h1>Galaxy Zoo: Mergers</h1>
                         <p>See <a href="mergers.html">this page</a> for full details and data for the separate <a href="http://mergers.galaxyzoo.org">Galaxy Zoo: Mergers</a> project.
 					</div>
 
-					<div id="section-21">
+					<div id="section-23">
 						<h1>Galaxy Builder</h1>
 						<p><a href="https://www.zooniverse.org/projects/tingard/galaxy-builder/" target="_blank">Galaxy Builder</a> made use of citizen science to create disc-bulge-bar-spiral photometric models of 198 spiral galaxies, selected using GZ2 and the NASA-Sloan Atlas. The project is further described in <a href="https://arxiv.org/abs/2006.10450" target="_blank">Lingard et al. (2020)</a>.</p>
 						<table class="downloads">
@@ -978,7 +1013,7 @@
 						</table>
 					</div>
 
-					<div id="section-22">
+					<div id="section-24">
 						<h1>Data visualizations</h1>
 						<p>For an interactive visualization of the decision trees for each of the Galaxy Zoo projects, please look at this tool created by Coleman Krawczyk (University of Portsmouth).
                         <p><a href="gz_trees/gz_trees.html">Galaxy Zoo Decision Trees</a>
