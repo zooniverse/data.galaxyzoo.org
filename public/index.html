@@ -33,7 +33,7 @@
 		    			<a href="#section-7">Galaxy Zoo 2</a>
 		    			<ul class="sub-nav">
 		    				<li><a href="#section-8">Full Catalog</a></li>
-						<li><a href="#section-21">Images</a></li>
+						<li><a href="#section-8">Images</a></li>
 		    				<li><a href="#section-9">Bar Lengths</a></li>
 		    				<li><a href="#section-10">Dust-Lane Spheroidal Galaxies</a></li>
 		    			</ul>
@@ -69,17 +69,23 @@
 		    				<li><a href="#section-21">Catalog, Models</a></li>
 		    			</ul>
 		    		</li>
+					<li>
+		    			<a href="#section-22">Galaxy Zoo Euclid (Q1, 378k)</a>
+						<ul class="sub-nav">
+		    				<li><a href="#section-23">Catalog, Models, Representations</a></li>
+		    			</ul>
+		    		</li>
                     <hr>
 		    		<li>
-		    			<a href="#section-22">Galaxy Zoo: Mergers</a>
+		    			<a href="#section-24">Galaxy Zoo: Mergers</a>
 		    		</li>
                     <hr>
 						<li>
-		    			<a href="#section-23">Galaxy Builder</a>
+		    			<a href="#section-25">Galaxy Builder</a>
 		    		</li>
                     <hr>
 		    		<li>
-		    			<a href="#section-24">Data Visualizations</a>
+		    			<a href="#section-26">Data Visualizations</a>
 		    		</li>
 		    	</ul>
 		    </div>
@@ -992,14 +998,51 @@
 						
 						</div>
 
+						<div id="section-22">
+						<h1>Galaxy Zoo Euclid (Q1: 378k)</h1>
+						<p>Galaxy Zoo Euclid (Q1) includes detailed morphology measurements for 378k galaxies million galaxies in Euclid Q1.
+							These are automated measurements made by deep learning models trained on Galaxy Zoo volunteer votes. 
+							
+							<br>
+							Our models were pretrained on all Galaxy Zoo labels to date (see <a href="https://arxiv.org/abs/2404.02973">"Scaling Laws for Galaxy Images"</a>) and then finetuned on volunteer answers to pre-Q1 (OTF) Euclid images.
+							<a href="https://github.com/mwalmsley/zoobot">Code</a> and <a href="https://zoobot.readthedocs.io">extensive documentation</a> is available if you would like to extend these models or apply them to new problems. 
+						</p>
+						<p>
+							<a href="https://arxiv.org/abs/2503.15310">Walmsley et al. (2025)</a>
+							describes the project and current data release. 
+							Please cite this paper if using any data from Galaxy Zoo Euclid.
+						</p>
+						
+						<div id="section-23">
+							<h3>Catalogue, Models, Representations</h3>
+
+							<p>
+								The GZ Euclid data is available via <a href="https://doi.org/10.5281/zenodo.15002907">Zenodo</a>.
+								This includes morphology measurements, the images (as shown to volunteers), and some common physical properties from the MER catalogues.
+								See the <a href="https://doi.org/10.5281/zenodo.15002907">Zenodo page</a> for more details.
+							</p>
+							<p>
+								The morphology catalogue is also available (or will be soon) from NOIRLab's <a href="https://datalab.noirlab.edu/">Astro Data Lab</a>.
+								This service allows you to cross-match our catalogue against your own catalogues.
+								<a href="https://datalab.noirlab.edu">Astro Data Lab</a> also hosts data from DESI itself, allowing you to query DESI spectra and GZ Euclid morphology measurements <a href="https://datalab.noirlab.edu/tools.php">with the same tools.</a> 
+							</p>
+							
+							<p>
+								For the first time, we are also sharing representations learned by our models. Due to the size, we share these compressed with either 40 or 100 PCA components.
+								The models themselves are available via <a href="https://huggingface.co/collections/mwalmsley/zoobot-encoders-65fa14ae92911b173712b874">HuggingFace</a>, and can be used to generate representations for new images.
+								Code and documentation for finetuning the models can be found in the <a href="https://github.com/mwalmsley/zoobot">Zoobot</a> GitHub repository.
+							</p>
+						
+						</div>
+
 					</div>
 
-					<div id="section-22">
+					<div id="section-24">
 						<h1>Galaxy Zoo: Mergers</h1>
                         <p>See <a href="mergers.html">this page</a> for full details and data for the separate <a href="http://mergers.galaxyzoo.org">Galaxy Zoo: Mergers</a> project.
 					</div>
 
-					<div id="section-23">
+					<div id="section-25">
 						<h1>Galaxy Builder</h1>
 						<p><a href="https://www.zooniverse.org/projects/tingard/galaxy-builder/" target="_blank">Galaxy Builder</a> made use of citizen science to create disc-bulge-bar-spiral photometric models of 198 spiral galaxies, selected using GZ2 and the NASA-Sloan Atlas. The project is further described in <a href="https://arxiv.org/abs/2006.10450" target="_blank">Lingard et al. (2020)</a>.</p>
 						<table class="downloads">
@@ -1013,7 +1056,7 @@
 						</table>
 					</div>
 
-					<div id="section-24">
+					<div id="section-26">
 						<h1>Data visualizations</h1>
 						<p>For an interactive visualization of the decision trees for each of the Galaxy Zoo projects, please look at this tool created by Coleman Krawczyk (University of Portsmouth).
                         <p><a href="gz_trees/gz_trees.html">Galaxy Zoo Decision Trees</a>
