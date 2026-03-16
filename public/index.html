@@ -1045,13 +1045,14 @@
 
 					<div id="section-24">
 						<h1>Galaxy Zoo: Cosmic Dawn</h1>
-						<p>Galaxy Zoo: Cosmic Dawn ... details... 
-							
-							<br>
-							...more details after line break...
+						<p>
+							Galaxy Zoo: Cosmic Dawn (GZCD) provides morphological classifications of over 41,000 galaxies across 6 square degrees of the Euclid Deep Field North (EDFN) from the Hawaii Twenty Square Degree (H20) survey, a part of the wider Cosmic Dawn survey.
+							This multiband Hyper Suprime-Cam (HSC) imaging featured galaxies down to apparent magnitudes of 21.5 in the HSC-i band and out to photometric redshifts of ~2.5 (or for which the photometric redshift estimation failed).
+							The subjects were also classified by the deep learning foundation model Zoobot, initially in an active learning cycle with volunteers before a final application to the data set.
 						</p>
 						<p>
-							...more details in new paragraph...
+							As part of the data release, 51 new gravitational lenses in the EDFN were discovered from this iteration.
+							This data set provides a valuable opportunity for follow-up imaging of objects in the EDFN as well as acting as a truth set for training deep learning models for application to ground-based surveys like that of the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS) collaboration and the newly operational Vera C. Rubin Observatory.
 						</p>
 						
 						<div id="section-25">
@@ -1059,15 +1060,15 @@
 
 							<p>
 								The GZCD data is available via <a href="https://doi.org/10.5281/zenodo.17200991">Zenodo</a>.
-								This includes ...
+								The data consists of morphological classifications made by volunteers as well as predicted classifications made by Zoobot (5.1 GB).
+								Also included are the subject images themselves (in PNG/JPG format), a file of metadata for each subject, and the tags assigned to the subjects by volunteers.
+								A Jupyter notebook is provided to give more details on the data set and examples of how to use it.
 								See the <a href="https://doi.org/10.5281/zenodo.17200991">Zenodo page</a> for more details.
 							</p>
 							<p>
-								...more details in new paragraph...
-							</p>
-							
-							<p>
-								...more details in new paragraph...
+								Zoobot was fine-tuned on this data set after being pretrained on all previous Galaxy Zoo labels - see the <a href="#section-22">Galaxy Zoo Euclid</a> section above for more details - and predicts both the volunteer vote fractions and 90% confidence intervals.
+								The classifications are presented in a style suitable for machine learning tasks as well as a more human-readable version.
+								Also provided are 'friendly' versions that simplify the results to just the 'leaf fractions', i.e. vote fractions for the highest-predicted answers to each question.
 							</p>
 						
 						</div>
